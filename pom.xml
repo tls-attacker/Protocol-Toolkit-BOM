@@ -43,6 +43,23 @@
                     <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
+            <build>
+                <plugins>
+                    <!-- Artifact deployment to OSSRH -->
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>${plugin.nexus-staging-maven-plugin.version}</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                            <!-- deploy with the following command: mvn -P maven-release nexus-staging:release -->
+                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
             <properties>
                 <!-- Artifacts pushed to maven central must be signed -->
                 <skip.signature>false</skip.signature>
@@ -93,7 +110,7 @@
                 <version>${toolkit.tls.attacker.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.rub.nds.tlsattacker</groupId>
+                <groupId>de.rub.nds.tls.attacker</groupId>
                 <artifactId>tls-mitm</artifactId>
                 <version>${toolkit.tls.attacker.version}</version>
             </dependency>
@@ -573,12 +590,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>${plugin.maven-deploy-plugin.version}</version>
-            </plugin>
-            <!-- Plugin to provide support to access staging functionality in a remote Nexus Professional server (OSSRH) -->
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>${plugin.nexus-staging-maven-plugin.version}</version>
             </plugin>
             <!--############ plugins without lifecycle bindings #############-->
             <!-- Plugin to ease version management for dependencies -->
