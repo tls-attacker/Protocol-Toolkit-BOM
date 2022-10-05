@@ -21,3 +21,4 @@ nbactions.xml
 pom.xml.*
 release.properties
 target/
+.flattened-pom.xml
