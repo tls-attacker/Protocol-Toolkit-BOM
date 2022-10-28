@@ -2,7 +2,7 @@ version: 2
 registries:
   rub-nexus:
     type: maven-repository
-    url: https://hydrogen.cloud.nds.rub.de/nexus/repository/maven-release/
+    url: https://hydrogen.cloud.nds.rub.de/nexus/repository/maven-releases/
     username: dependabot
     password: ${{secrets.DEPENDABOT_NEXUS_PASSWORD}}
 updates:
