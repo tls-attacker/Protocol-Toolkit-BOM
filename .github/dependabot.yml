@@ -5,9 +5,6 @@ registries:
     url: https://hydrogen.cloud.nds.rub.de/nexus/repository/maven-release/
     username: dependabot
     password: ${{secrets.DEPENDABOT_NEXUS_PASSWORD}}
-  maven-central:
-    type: maven-repository
-    url: https://repo1.maven.org/maven2/
 updates:
   - package-ecosystem: "maven"
     directory: "/"
