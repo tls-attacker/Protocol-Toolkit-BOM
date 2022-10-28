@@ -11,6 +11,7 @@ updates:
     schedule:
       # Check for dependency updates on a daily basis
       interval: "daily"
+    open-pull-requests-limit: 20
     registries: "*"
     reviewers:
       - "tls-attacker/tls-attacker-extended"
