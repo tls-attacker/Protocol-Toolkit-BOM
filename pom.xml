@@ -46,7 +46,7 @@
         <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
         <toolkit.tls.attacker.version>4.0.0</toolkit.tls.attacker.version>
-        <toolkit.tls.scanner.version>5.0.0</toolkit.tls.scanner.version>
+        <toolkit.tls.scanner.version>5.0.0-ssh</toolkit.tls.scanner.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.0.0</toolkit.ssh.attacker.version>
