@@ -136,7 +136,7 @@
         <deps.joda-time.version>2.12.1</deps.joda-time.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.9.1</deps.junit5.version>
-        <deps.mockito.version>4.8.1</deps.mockito.version>
+        <deps.mockito.version>4.9.0</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.2.0</plugin.maven-clean-plugin.version>
