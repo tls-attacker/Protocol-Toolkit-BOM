@@ -134,6 +134,7 @@
         <deps.reflections.version>0.10.2</deps.reflections.version>
         <deps.dnsjava.version>3.5.1</deps.dnsjava.version>
         <deps.joda-time.version>2.12.1</deps.joda-time.version>
+        <deps.docker-java.version>3.2.5</deps.docker-java.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.9.1</deps.junit5.version>
         <deps.mockito.version>4.9.0</deps.mockito.version>
@@ -217,6 +218,17 @@
                 <groupId>com.beust</groupId>
                 <artifactId>jcommander</artifactId>
                 <version>${deps.jcommander.version}</version>
+            </dependency>
+            <!-- Docker Java -->
+            <dependency>
+                <groupId>com.github.docker-java</groupId>
+                <artifactId>docker-java-core</artifactId>
+                <version>${deps.docker-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.docker-java</groupId>
+                <artifactId>docker-java-transport-httpclient5</artifactId>
+                <version>${deps.docker-java.version}</version>
             </dependency>
             <!-- Google Guava -->
             <dependency>
