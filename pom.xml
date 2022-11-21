@@ -133,7 +133,7 @@
         <deps.json-simple.version>1.1.1</deps.json-simple.version>
         <deps.jackson.version>2.14.0</deps.jackson.version>
         <deps.reflections.version>0.10.2</deps.reflections.version>
-        <deps.dnsjava.version>3.5.1</deps.dnsjava.version>
+        <deps.dnsjava.version>3.5.2</deps.dnsjava.version>
         <deps.joda-time.version>2.12.1</deps.joda-time.version>
         <deps.docker-java.version>3.2.5</deps.docker-java.version>
         <!-- Unit testing dependencies -->
