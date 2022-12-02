@@ -545,7 +545,6 @@
                 <artifactId>reflections</artifactId>
                 <version>${deps.reflections.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
