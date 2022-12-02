@@ -127,6 +127,8 @@
         <deps.commons-lang3.version>3.12.0</deps.commons-lang3.version>
         <deps.commons-text.version>1.10.0</deps.commons-text.version>
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
+        <deps.commons-net.version>3.8.0</deps.commons-net.version>
+        <deps.commons-validator.version>1.7</deps.commons-validator.version>
         <deps.guava.version>31.1-jre</deps.guava.version>
         <deps.bouncycastle.version>1.64</deps.bouncycastle.version>
         <deps.jcommander.version>1.82</deps.jcommander.version>
@@ -136,6 +138,11 @@
         <deps.dnsjava.version>3.5.2</deps.dnsjava.version>
         <deps.joda-time.version>2.12.2</deps.joda-time.version>
         <deps.docker-java.version>3.2.14</deps.docker-java.version>
+        <deps.rabbitmq.version>5.16.0</deps.rabbitmq.version>
+        <deps.mongodb.version>4.7.1</deps.mongodb.version>
+        <deps.mongojack.version>4.7.0</deps.mongojack.version>
+        <deps.quartz.version>2.3.2</deps.quartz.version>
+        <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.9.1</deps.junit5.version>
         <deps.mockito.version>4.9.0</deps.mockito.version>
@@ -248,6 +255,22 @@
                 <groupId>com.openpojo</groupId>
                 <artifactId>openpojo</artifactId>
                 <version>${deps.openpojo.version}</version>
+            </dependency>
+            <!-- RabbitMQ -->
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>${deps.rabbitmq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>${deps.commons-net.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${deps.commons-validator.version}</version>
             </dependency>
             <!-- Common toolkit components -->
             <dependency>
@@ -482,6 +505,39 @@
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk15on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
+            </dependency>
+            <!-- Persistence -->
+            <dependency>
+                <groupId>org.eclipse.persistence</groupId>
+                <artifactId>jakarta.persistence</artifactId>
+                <version>${deps.jakarta-persistence.version}</version>
+            </dependency>
+            <!-- MongoDB -->
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>bson</artifactId>
+                <version>${deps.mongodb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver-core</artifactId>
+                <version>${deps.mongodb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver-sync</artifactId>
+                <version>${deps.mongodb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongojack</groupId>
+                <artifactId>mongojack</artifactId>
+                <version>${deps.mongojack.version}</version>
+            </dependency>
+            <!-- Scheduling -->
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${deps.quartz.version}</version>
             </dependency>
             <!-- Reflections -->
             <dependency>
