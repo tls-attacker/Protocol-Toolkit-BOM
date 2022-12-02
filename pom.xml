@@ -134,7 +134,7 @@
         <deps.jackson.version>2.14.1</deps.jackson.version>
         <deps.reflections.version>0.10.2</deps.reflections.version>
         <deps.dnsjava.version>3.5.2</deps.dnsjava.version>
-        <deps.joda-time.version>2.12.1</deps.joda-time.version>
+        <deps.joda-time.version>2.12.2</deps.joda-time.version>
         <deps.docker-java.version>3.2.14</deps.docker-java.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.9.1</deps.junit5.version>
