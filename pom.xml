@@ -115,7 +115,7 @@
         <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
-        <toolkit.tls.attacker.version>5.0.2</toolkit.tls.attacker.version>
+        <toolkit.tls.attacker.version>5.0.3</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>5.2.1</toolkit.tls.scanner.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
