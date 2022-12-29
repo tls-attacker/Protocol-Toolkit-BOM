@@ -4,7 +4,7 @@
 
     <groupId>de.rub.nds</groupId>
     <artifactId>protocol-toolkit-bom</artifactId>
-    <version>1.2.5-SNAPSHOT</version>
+    <version>2.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Protocol Toolkit (Bill of Materials)</name>
@@ -111,9 +111,9 @@
 
     <properties>
         <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>4.0.0</toolkit.common.modifiableVariable.version>
-        <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
-        <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
+        <toolkit.common.modifiableVariable.version>4.0.1-SNAPSHOT</toolkit.common.modifiableVariable.version>
+        <toolkit.common.asn1tool.version>2.0.1-SNAPSHOT</toolkit.common.asn1tool.version>
+        <toolkit.common.x509attacker.version>2.0.1-SNAPSHOT</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>4.0.3-SNAPSHOT</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>5.0.0</toolkit.tls.scanner.version>
