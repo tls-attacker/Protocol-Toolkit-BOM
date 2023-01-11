@@ -312,7 +312,7 @@
             </dependency>
             <dependency>
                 <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-core-pqc</artifactId>
+                <artifactId>ssh-core-oqs</artifactId>
                 <version>${toolkit.ssh.attacker.version}</version>
             </dependency>
             <dependency>
