@@ -119,7 +119,7 @@
         <toolkit.tls.scanner.version>5.2.3</toolkit.tls.scanner.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
-        <toolkit.ssh.attacker.version>1.1.1</toolkit.ssh.attacker.version>
+        <toolkit.ssh.attacker.version>1.1.2</toolkit.ssh.attacker.version>
         <toolkit.ssh.scanner.version>1.0.0</toolkit.ssh.scanner.version>
         <!-- Common external dependencies -->
         <deps.jaxb.version>4.0.1</deps.jaxb.version>
