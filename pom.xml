@@ -111,7 +111,7 @@
 
     <properties>
         <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>4.1.0</toolkit.common.modifiableVariable.version>
+        <toolkit.common.modifiableVariable.version>4.1.1</toolkit.common.modifiableVariable.version>
         <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
