@@ -113,7 +113,7 @@
         <!-- Toolkit component versions -->
         <toolkit.common.modifiableVariable.version>4.0.1-SNAPSHOT</toolkit.common.modifiableVariable.version>
         <toolkit.common.protocolattacker.version>1.0.0-SNAPSHOT</toolkit.common.protocolattacker.version>
-        <toolkit.common.asn1attacker.version>2.0.1-SNAPSHOT</toolkit.common.asn1attacker.version>
+        <toolkit.common.asn1attacker.version>3.0.1-SNAPSHOT</toolkit.common.asn1attacker.version>
         <toolkit.common.x509attacker.version>2.0.1-SNAPSHOT</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>5.1.5-SNAPSHOT</toolkit.tls.attacker.version>
