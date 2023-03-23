@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.rub.nds</groupId>
@@ -119,7 +117,7 @@
         <toolkit.common.x509attacker.version>2.0.1-SNAPSHOT</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>5.1.5-SNAPSHOT</toolkit.tls.attacker.version>
-        <toolkit.tls.scanner.version>5.1.2-SNAPSHOT</toolkit.tls.scanner.version>
+        <toolkit.tls.scanner.version>5.2.4-SNAPSHOT</toolkit.tls.scanner.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.1.1</toolkit.ssh.attacker.version>
