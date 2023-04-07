@@ -151,7 +151,7 @@
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.2.0</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.2.1</plugin.maven-enforcer-plugin.version>
-        <plugin.spotless-maven-plugin.version>2.35.0</plugin.spotless-maven-plugin.version>
+        <plugin.spotless-maven-plugin.version>2.36.0</plugin.spotless-maven-plugin.version>
         <plugin.flatten-maven-plugin.version>1.4.1</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.9</plugin.jacoco.version>
