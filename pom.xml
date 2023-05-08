@@ -163,7 +163,7 @@
         <plugin.maven-install-plugin.version>3.1.1</plugin.maven-install-plugin.version>
         <plugin.maven-dependency-plugin.version>3.5.0</plugin.maven-dependency-plugin.version>
         <plugin.maven-failsafe-plugin.version>3.0.0</plugin.maven-failsafe-plugin.version>
-        <plugin.maven-gpg-plugin.version>3.0.1</plugin.maven-gpg-plugin.version>
+        <plugin.maven-gpg-plugin.version>3.1.0</plugin.maven-gpg-plugin.version>
         <plugin.maven-deploy-plugin.version>3.1.1</plugin.maven-deploy-plugin.version>
         <plugin.nexus-staging-maven-plugin.version>1.6.13</plugin.nexus-staging-maven-plugin.version>
         <plugin.versions-maven-plugin.version>2.15.0</plugin.versions-maven-plugin.version>
