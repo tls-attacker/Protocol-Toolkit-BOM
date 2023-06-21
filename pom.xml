@@ -139,7 +139,7 @@
         <deps.dnsjava.version>3.5.2</deps.dnsjava.version>
         <deps.joda-time.version>2.12.5</deps.joda-time.version>
         <deps.docker-java.version>3.3.1</deps.docker-java.version>
-        <deps.rabbitmq.version>5.17.0</deps.rabbitmq.version>
+        <deps.rabbitmq.version>5.18.0</deps.rabbitmq.version>
         <deps.mongodb.version>4.9.1</deps.mongodb.version>
         <deps.mongojack.version>4.8.0</deps.mongojack.version>
         <deps.quartz.version>2.3.2</deps.quartz.version>
