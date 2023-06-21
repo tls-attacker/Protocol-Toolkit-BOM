@@ -115,6 +115,7 @@
         <toolkit.common.protocolattacker.version>1.0.0</toolkit.common.protocolattacker.version>
         <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
+        <toolkit.common.scannercore.version>5.2.6</toolkit.common.scannercore.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>5.2.1</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>5.2.5</toolkit.tls.scanner.version>
@@ -291,6 +292,11 @@
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
+                <artifactId>scanner-core</artifactId>
+                <version>${toolkit.common.scannercore.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds</groupId>
                 <artifactId>x509-attacker</artifactId>
                 <version>${toolkit.common.x509attacker.version}</version>
             </dependency>
@@ -452,11 +458,6 @@
                 <version>${toolkit.tls.dockerlib.version}</version>
             </dependency>
             <!-- TLS-Scanner -->
-            <dependency>
-                <groupId>de.rub.nds.tls.scanner</groupId>
-                <artifactId>scanner-core</artifactId>
-                <version>${toolkit.tls.scanner.version}</version>
-            </dependency>
             <dependency>
                 <groupId>de.rub.nds.tls.scanner</groupId>
                 <artifactId>tls-client-scanner</artifactId>
