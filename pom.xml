@@ -115,7 +115,7 @@
         <toolkit.common.protocolattacker.version>1.0.0</toolkit.common.protocolattacker.version>
         <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
-        <toolkit.common.scannercore.version>5.3.0</toolkit.common.scannercore.version>
+        <toolkit.common.scannercore.version>5.3.1</toolkit.common.scannercore.version>
         <toolkit.common.coffee4j.anvil.version>1.0.6</toolkit.common.coffee4j.anvil.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>5.3.0</toolkit.tls.attacker.version>
