@@ -740,8 +740,7 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- WARNING: The following plugins are carefully selected and either already included
-            by the default
+            <!-- WARNING: The following plugins are carefully selected and either already included by the default
                  lifecycle bindings or not bound to the lifecycle (only exception to this rule is the
                  maven-enforcer-plugin and spotless-maven-plugin). This section should not be used
                  to configure plugins. -->
@@ -868,8 +867,7 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <!-- deploy with the following command: mvn -P maven-release
-                            nexus-staging:release -->
+                            <!-- deploy with the following command: mvn -P maven-release nexus-staging:release -->
                             <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
