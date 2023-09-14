@@ -4,7 +4,7 @@
 
     <groupId>de.rub.nds</groupId>
     <artifactId>protocol-toolkit-bom</artifactId>
-    <version>3.5.4-SNAPSHOT</version>
+    <version>3.5.4</version>
     <packaging>pom</packaging>
 
     <name>Protocol Toolkit (Bill of Materials)</name>
@@ -92,7 +92,7 @@
     <scm>
         <connection>scm:git:https://github.com/tls-attacker/Protocol-Toolkit-BOM.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/tls-attacker/Protocol-Toolkit-BOM.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v3.5.4</tag>
         <url>https://github.com/tls-attacker/Protocol-Toolkit-BOM</url>
     </scm>
 
@@ -276,6 +276,12 @@
                 <artifactId>commons-validator</artifactId>
                 <version>${deps.commons-validator.version}</version>
             </dependency>
+            <!-- Anvil-Core -->
+            <dependency>
+                <groupId>de.rub.nds</groupId>
+                <artifactId>anvil-core</artifactId>
+                <version>${toolkit.anvil.core.version}</version>
+            </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
                 <artifactId>asn1-tool</artifactId>
@@ -354,12 +360,6 @@
                 <groupId>de.rub.nds.tls</groupId>
                 <artifactId>coffee4j-anvil-model</artifactId>
                 <version>${toolkit.common.coffee4j.anvil.version}</version>
-            </dependency>
-            <!-- Anvil-Core -->
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>anvil-core</artifactId>
-                <version>${toolkit.anvil.core.version}</version>
             </dependency>
             <!-- TLS-Attacker -->
             <dependency>
