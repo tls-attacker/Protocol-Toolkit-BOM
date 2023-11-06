@@ -148,7 +148,7 @@
         <deps.quartz.version>2.3.2</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
         <!-- Unit testing dependencies -->
-        <deps.junit5.version>5.10.0</deps.junit5.version>
+        <deps.junit5.version>5.10.1</deps.junit5.version>
         <deps.mockito.version>5.6.0</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
