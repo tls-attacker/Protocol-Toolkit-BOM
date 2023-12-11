@@ -4,7 +4,7 @@
 
     <groupId>de.rub.nds</groupId>
     <artifactId>protocol-toolkit-bom</artifactId>
-    <version>3.5.18-SNAPSHOT</version>
+    <version>4.0.0</version>
     <packaging>pom</packaging>
 
     <name>Protocol Toolkit (Bill of Materials)</name>
@@ -111,15 +111,14 @@
 
     <properties>
         <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>4.1.2</toolkit.common.modifiableVariable.version>
-        <toolkit.common.protocolattacker.version>1.0.0</toolkit.common.protocolattacker.version>
-        <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
-        <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
-        <toolkit.common.scannercore.version>5.3.2</toolkit.common.scannercore.version>
-        <toolkit.common.coffee4j.anvil.version>1.1.1</toolkit.common.coffee4j.anvil.version>
+        <toolkit.common.modifiableVariable.version>4.1.3</toolkit.common.modifiableVariable.version>
+        <toolkit.common.protocolattacker.version>1.1.0</toolkit.common.protocolattacker.version>
+        <toolkit.common.asn1attacker.version>3.0.0</toolkit.common.asn1attacker.version>
+        <toolkit.common.x509attacker.version>3.0.0</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.3.1</toolkit.tls.dockerlib.version>
-        <toolkit.tls.attacker.version>5.3.3</toolkit.tls.attacker.version>
-        <toolkit.tls.scanner.version>5.4.1</toolkit.tls.scanner.version>
+        <toolkit.tls.attacker.version>6.0.0</toolkit.tls.attacker.version>
+        <toolkit.tls.scanner.version>6.0.0</toolkit.tls.scanner.version>
+        <toolkit.common.scannercore.version>5.3.3</toolkit.common.scannercore.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.3.0</toolkit.ssh.attacker.version>
@@ -147,6 +146,7 @@
         <deps.mongojack.version>4.8.1</deps.mongojack.version>
         <deps.quartz.version>2.3.2</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
+        <deps.selenium.version>4.6.0</deps.selenium.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.10.1</deps.junit5.version>
         <deps.mockito.version>5.8.0</deps.mockito.version>
@@ -284,8 +284,8 @@
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
-                <artifactId>asn1-tool</artifactId>
-                <version>${toolkit.common.asn1tool.version}</version>
+                <artifactId>asn1-attacker</artifactId>
+                <version>${toolkit.common.asn1attacker.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
@@ -580,6 +580,11 @@
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
                 <version>${deps.reflections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>${deps.selenium.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
