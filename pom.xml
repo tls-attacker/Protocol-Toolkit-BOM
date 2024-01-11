@@ -111,14 +111,14 @@
 
     <properties>
         <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>4.2.0</toolkit.common.modifiableVariable.version>
-        <toolkit.common.protocolattacker.version>1.1.2</toolkit.common.protocolattacker.version>
-        <toolkit.common.asn1attacker.version>3.0.0</toolkit.common.asn1attacker.version>
-        <toolkit.common.x509attacker.version>3.0.0</toolkit.common.x509attacker.version>
+        <toolkit.common.modifiableVariable.version>4.1.5-SNAPSHOT</toolkit.common.modifiableVariable.version>
+        <toolkit.common.protocolattacker.version>1.1.3-SNAPSHOT</toolkit.common.protocolattacker.version>
+        <toolkit.common.asn1attacker.version>3.0.1-SNAPSHOT</toolkit.common.asn1attacker.version>
+        <toolkit.common.x509attacker.version>3.0.0-SNAPSHOT</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.3.1</toolkit.tls.dockerlib.version>
-        <toolkit.tls.attacker.version>6.0.0</toolkit.tls.attacker.version>
-        <toolkit.tls.scanner.version>6.0.0</toolkit.tls.scanner.version>
-        <toolkit.common.scannercore.version>5.3.4</toolkit.common.scannercore.version>
+        <toolkit.tls.attacker.version>6.0.1-SNAPSHOT</toolkit.tls.attacker.version>
+        <toolkit.tls.scanner.version>6.0.1-SNAPSHOT</toolkit.tls.scanner.version>
+        <toolkit.common.scannercore.version>5.3.5-SNAPSHOT</toolkit.common.scannercore.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.3.0</toolkit.ssh.attacker.version>
