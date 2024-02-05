@@ -148,7 +148,7 @@
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
         <deps.selenium.version>4.17.0</deps.selenium.version>
         <!-- Unit testing dependencies -->
-        <deps.junit5.version>5.10.1</deps.junit5.version>
+        <deps.junit5.version>5.10.2</deps.junit5.version>
         <deps.mockito.version>5.10.0</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
