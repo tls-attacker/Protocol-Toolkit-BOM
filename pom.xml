@@ -146,7 +146,7 @@
         <deps.mongojack.version>4.8.2</deps.mongojack.version>
         <deps.quartz.version>2.3.2</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
-        <deps.selenium.version>4.17.0</deps.selenium.version>
+        <deps.selenium.version>4.18.1</deps.selenium.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.10.2</deps.junit5.version>
         <deps.mockito.version>5.10.0</deps.mockito.version>
