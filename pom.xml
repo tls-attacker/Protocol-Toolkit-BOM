@@ -124,7 +124,7 @@
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.3.0</toolkit.ssh.attacker.version>
         <toolkit.ssh.scanner.version>1.0.0</toolkit.ssh.scanner.version>
-        <toolkit.anvil.core.version>1.2.1</toolkit.anvil.core.version>
+        <toolkit.anvil.core.version>1.2.3</toolkit.anvil.core.version>
         <!-- Common external dependencies -->
         <deps.jaxb.version>4.0.4</deps.jaxb.version>
         <deps.log4j.version>2.22.0</deps.log4j.version>
