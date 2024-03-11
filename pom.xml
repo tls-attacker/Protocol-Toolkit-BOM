@@ -136,7 +136,7 @@
         <deps.bouncycastle.version>1.64</deps.bouncycastle.version>
         <deps.jcommander.version>1.82</deps.jcommander.version>
         <deps.json-simple.version>1.1.1</deps.json-simple.version>
-        <deps.jackson.version>2.16.1</deps.jackson.version>
+        <deps.jackson.version>2.16.2</deps.jackson.version>
         <deps.reflections.version>0.10.2</deps.reflections.version>
         <deps.dnsjava.version>3.5.3</deps.dnsjava.version>
         <deps.joda-time.version>2.12.7</deps.joda-time.version>
