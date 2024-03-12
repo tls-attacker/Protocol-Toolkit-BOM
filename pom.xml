@@ -125,7 +125,7 @@
         <toolkit.ssh.scanner.version>1.0.0</toolkit.ssh.scanner.version>
         <toolkit.anvil.core.version>1.2.1</toolkit.anvil.core.version>
         <!-- Common external dependencies -->
-        <deps.jaxb.version>4.0.4</deps.jaxb.version>
+        <deps.jaxb.version>4.0.5</deps.jaxb.version>
         <deps.log4j.version>2.23.0</deps.log4j.version>
         <deps.commons-lang3.version>3.14.0</deps.commons-lang3.version>
         <deps.commons-text.version>1.11.0</deps.commons-text.version>
