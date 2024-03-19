@@ -116,7 +116,7 @@
         <toolkit.common.asn1tool.version>2.0.0</toolkit.common.asn1tool.version>
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
         <toolkit.common.scannercore.version>5.3.2</toolkit.common.scannercore.version>
-        <toolkit.common.coffee4j.anvil.version>1.1.1</toolkit.common.coffee4j.anvil.version>
+        <toolkit.common.coffee4j.anvil.version>1.2.0</toolkit.common.coffee4j.anvil.version>
         <toolkit.tls.dockerlib.version>2.3.2</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>5.3.3-preX509b</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>5.4.1-anvil</toolkit.tls.scanner.version>
@@ -124,7 +124,7 @@
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.3.0</toolkit.ssh.attacker.version>
         <toolkit.ssh.scanner.version>1.0.0</toolkit.ssh.scanner.version>
-        <toolkit.anvil.core.version>1.2.3</toolkit.anvil.core.version>
+        <toolkit.anvil.core.version>1.2.4</toolkit.anvil.core.version>
         <!-- Common external dependencies -->
         <deps.jaxb.version>4.0.4</deps.jaxb.version>
         <deps.log4j.version>2.22.0</deps.log4j.version>
