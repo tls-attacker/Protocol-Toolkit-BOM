@@ -128,7 +128,7 @@
         <deps.jaxb.version>4.0.5</deps.jaxb.version>
         <deps.log4j.version>2.23.1</deps.log4j.version>
         <deps.commons-lang3.version>3.14.0</deps.commons-lang3.version>
-        <deps.commons-text.version>1.11.0</deps.commons-text.version>
+        <deps.commons-text.version>1.12.0</deps.commons-text.version>
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
         <deps.commons-net.version>3.10.0</deps.commons-net.version>
         <deps.commons-validator.version>1.8.0</deps.commons-validator.version>
