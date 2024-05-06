@@ -174,7 +174,7 @@
         <!-- Reporting plugins -->
         <plugin.maven-site-plugin.version>4.0.0-M13</plugin.maven-site-plugin.version>
         <plugin.maven-project-info-reports-plugin.version>3.5.0</plugin.maven-project-info-reports-plugin.version>
-        <plugin.spotbugs-maven-plugin.version>4.8.4.0</plugin.spotbugs-maven-plugin.version>
+        <plugin.spotbugs-maven-plugin.version>4.8.5.0</plugin.spotbugs-maven-plugin.version>
         <plugin.maven-pmd-plugin.version>3.22.0</plugin.maven-pmd-plugin.version>
         <plugin.maven-jxr-plugin.version>3.3.2</plugin.maven-jxr-plugin.version>
         <!-- Common properties -->
