@@ -172,7 +172,7 @@
         <plugin.versions-maven-plugin.version>2.16.2</plugin.versions-maven-plugin.version>
         <plugin.maven-release-plugin.version>3.0.1</plugin.maven-release-plugin.version>
         <!-- Reporting plugins -->
-        <plugin.maven-site-plugin.version>4.0.0-M14</plugin.maven-site-plugin.version>
+        <plugin.maven-site-plugin.version>4.0.0-M15</plugin.maven-site-plugin.version>
         <plugin.maven-project-info-reports-plugin.version>3.5.0</plugin.maven-project-info-reports-plugin.version>
         <plugin.spotbugs-maven-plugin.version>4.8.5.0</plugin.spotbugs-maven-plugin.version>
         <plugin.maven-pmd-plugin.version>3.22.0</plugin.maven-pmd-plugin.version>
