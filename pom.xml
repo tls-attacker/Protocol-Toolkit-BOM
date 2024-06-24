@@ -164,7 +164,7 @@
         <plugin.maven-javadoc-plugin.version>3.7.0</plugin.maven-javadoc-plugin.version>
         <plugin.maven-source-plugin.version>3.3.1</plugin.maven-source-plugin.version>
         <plugin.maven-install-plugin.version>3.1.2</plugin.maven-install-plugin.version>
-        <plugin.maven-dependency-plugin.version>3.7.0</plugin.maven-dependency-plugin.version>
+        <plugin.maven-dependency-plugin.version>3.7.1</plugin.maven-dependency-plugin.version>
         <plugin.maven-failsafe-plugin.version>3.3.0</plugin.maven-failsafe-plugin.version>
         <plugin.maven-gpg-plugin.version>3.2.4</plugin.maven-gpg-plugin.version>
         <plugin.maven-deploy-plugin.version>3.1.2</plugin.maven-deploy-plugin.version>
