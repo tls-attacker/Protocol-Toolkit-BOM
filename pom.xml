@@ -169,7 +169,7 @@
         <plugin.maven-gpg-plugin.version>3.2.4</plugin.maven-gpg-plugin.version>
         <plugin.maven-deploy-plugin.version>3.1.2</plugin.maven-deploy-plugin.version>
         <plugin.nexus-staging-maven-plugin.version>1.7.0</plugin.nexus-staging-maven-plugin.version>
-        <plugin.versions-maven-plugin.version>2.17.0</plugin.versions-maven-plugin.version>
+        <plugin.versions-maven-plugin.version>2.17.1</plugin.versions-maven-plugin.version>
         <plugin.maven-release-plugin.version>3.1.1</plugin.maven-release-plugin.version>
         <!-- Reporting plugins -->
         <plugin.maven-site-plugin.version>4.0.0-M16</plugin.maven-site-plugin.version>
