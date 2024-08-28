@@ -159,7 +159,7 @@
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.12</plugin.jacoco.version>
         <plugin.maven-compiler-plugin.version>3.13.0</plugin.maven-compiler-plugin.version>
-        <plugin.maven-surefire-plugin.version>3.4.0</plugin.maven-surefire-plugin.version>
+        <plugin.maven-surefire-plugin.version>3.5.0</plugin.maven-surefire-plugin.version>
         <plugin.maven-jar-plugin.version>3.4.2</plugin.maven-jar-plugin.version>
         <plugin.maven-javadoc-plugin.version>3.8.0</plugin.maven-javadoc-plugin.version>
         <plugin.maven-source-plugin.version>3.3.1</plugin.maven-source-plugin.version>
