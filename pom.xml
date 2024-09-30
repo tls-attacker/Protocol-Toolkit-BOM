@@ -126,7 +126,7 @@
         <toolkit.anvil.core.version>1.2.4</toolkit.anvil.core.version>
         <!-- Common external dependencies -->
         <deps.jaxb.version>4.0.5</deps.jaxb.version>
-        <deps.log4j.version>2.24.0</deps.log4j.version>
+        <deps.log4j.version>2.24.1</deps.log4j.version>
         <deps.commons-lang3.version>3.17.0</deps.commons-lang3.version>
         <deps.commons-text.version>1.12.0</deps.commons-text.version>
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
