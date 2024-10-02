@@ -811,7 +811,6 @@
                         <flexmark />
                     </markdown>
                 </configuration>
-                <!--
                 <executions>
                     <execution>
                         <id>format</id>
@@ -821,7 +820,6 @@
                         <phase>process-sources</phase>
                     </execution>
                 </executions>
-            -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
