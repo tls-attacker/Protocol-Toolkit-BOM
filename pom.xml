@@ -154,7 +154,7 @@
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.4.0</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
-        <plugin.spotless-maven-plugin.version>2.43.0</plugin.spotless-maven-plugin.version>
+        <plugin.maven-fmt.version>2.23</plugin.maven-fmt.version>
         <plugin.flatten-maven-plugin.version>1.6.0</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.12</plugin.jacoco.version>
@@ -607,9 +607,9 @@
                 </plugin>
                 <!-- Plugin to format the source code -->
                 <plugin>
-                    <groupId>com.diffplug.spotless</groupId>
-                    <artifactId>spotless-maven-plugin</artifactId>
-                    <version>${plugin.spotless-maven-plugin.version}</version>
+                    <groupId>com.spotify.fmt</groupId>
+                    <artifactId>fmt-maven-plugin</artifactId>
+                    <version>${plugin.maven-fmt.version}</version>
                 </plugin>
                 <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.) before release -->
                 <plugin>
@@ -748,8 +748,7 @@
         <plugins>
             <!-- WARNING: The following plugins are carefully selected and either already included by the default
                  lifecycle bindings or not bound to the lifecycle (only exception to this rule is the
-                 maven-enforcer-plugin and spotless-maven-plugin). This section should not be used
-                 to configure plugins. -->
+                 maven-enforcer-plugin). This section should not be used to configure plugins. -->
             <!--################# default lifecycle plugins #################-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -774,36 +773,13 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>com.diffplug.spotless</groupId>
-                <artifactId>spotless-maven-plugin</artifactId>
-                <configuration>
-                    <pom>
-                        <includes>
-                            <include>**/pom.xml</include>
-                        </includes>
-                        <sortPom>
-                            <sortDependencies>scope,groupId,artifactId</sortDependencies>
-                            <sortModules>true</sortModules>
-                            <sortExecutions>true</sortExecutions>
-                            <nrOfIndentSpace>4</nrOfIndentSpace>
-                            <expandEmptyElements>false</expandEmptyElements>
-                            <spaceBeforeCloseEmptyElement>true</spaceBeforeCloseEmptyElement>
-                        </sortPom>
-                    </pom>
-                    <markdown>
-                        <includes>
-                            <include>**/*.md</include>
-                        </includes>
-                        <flexmark />
-                    </markdown>
-                </configuration>
+                <groupId>com.spotify.fmt</groupId>
+                <artifactId>fmt-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>format</id>
                         <goals>
-                            <goal>apply</goal>
+                            <goal>format</goal>
                         </goals>
-                        <phase>process-sources</phase>
                     </execution>
                 </executions>
             </plugin>
