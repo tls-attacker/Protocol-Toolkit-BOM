@@ -147,7 +147,7 @@
         <deps.quartz.version>2.3.2</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
         <deps.selenium.version>4.25.0</deps.selenium.version>
-        <deps.siv-mode.version>1.5.0</deps.siv-mode.version>
+        <deps.siv-mode.version>1.5.2</deps.siv-mode.version>
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.11.2</deps.junit5.version>
