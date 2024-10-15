@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.rub.nds</groupId>
@@ -550,6 +552,11 @@
                 <artifactId>bcprov-jdk15on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bctls-jdk15to18</artifactId>
+                <version>${deps.bouncycastle.version}</version>
+            </dependency>
             <!-- siv-mode -->
             <dependency>
                 <groupId>org.cryptomator</groupId>
@@ -606,14 +613,16 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!--################## clean lifecycle plugins ##################-->
+                <!--##################
+                clean lifecycle plugins ##################-->
                 <!-- Plugin to remove build artifacts -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>${plugin.maven-clean-plugin.version}</version>
                 </plugin>
-                <!--################# default lifecycle plugins #################-->
+                <!--#################
+                default lifecycle plugins #################-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -625,7 +634,8 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${plugin.spotless-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.) before release -->
+                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.)
+                before release -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
@@ -713,7 +723,8 @@
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>${plugin.nexus-staging-maven-plugin.version}</version>
                 </plugin>
-                <!--################## site lifecycle plugins ###################-->
+                <!--##################
+                site lifecycle plugins ###################-->
                 <!-- Plugin used to generate a site for the project -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -732,7 +743,8 @@
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${plugin.spotbugs-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin used to generate reports for code rule violation and copy paste fragments -->
+                <!-- Plugin used to generate reports for code rule violation and copy paste
+                fragments -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
@@ -744,7 +756,8 @@
                     <artifactId>maven-jxr-plugin</artifactId>
                     <version>${plugin.maven-jxr-plugin.version}</version>
                 </plugin>
-                <!--############ plugins without lifecycle bindings #############-->
+                <!--############
+                plugins without lifecycle bindings #############-->
                 <!-- Plugin to ease version management for dependencies -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -760,11 +773,13 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- WARNING: The following plugins are carefully selected and either already included by the default
+            <!-- WARNING: The following plugins are carefully selected and either already included
+            by the default
                  lifecycle bindings or not bound to the lifecycle (only exception to this rule is the
                  maven-enforcer-plugin and spotless-maven-plugin). This section should not be used
                  to configure plugins. -->
-            <!--################# default lifecycle plugins #################-->
+            <!--#################
+            default lifecycle plugins #################-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -844,7 +859,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
-            <!--############ plugins without lifecycle bindings #############-->
+            <!--############
+            plugins without lifecycle bindings #############-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -855,7 +871,8 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <scmCommentPrefix>release:</scmCommentPrefix>
-                    <!--suppress UnresolvedMavenProperty -->
+                    <!--suppress
+                    UnresolvedMavenProperty -->
                     <scmReleaseCommitComment>@{prefix} @{releaseLabel}</scmReleaseCommitComment>
                     <scmDevelopmentCommitComment>@{prefix} Prepare for next development iteration</scmDevelopmentCommitComment>
                 </configuration>
@@ -887,7 +904,8 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <!-- deploy with the following command: mvn -P maven-release nexus-staging:release -->
+                            <!-- deploy with the following command: mvn -P maven-release
+                            nexus-staging:release -->
                             <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
