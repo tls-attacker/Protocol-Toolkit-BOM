@@ -613,16 +613,14 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!--##################
-                clean lifecycle plugins ##################-->
+                <!--################## clean lifecycle plugins ##################-->
                 <!-- Plugin to remove build artifacts -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>${plugin.maven-clean-plugin.version}</version>
                 </plugin>
-                <!--#################
-                default lifecycle plugins #################-->
+                <!--################# default lifecycle plugins #################-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -634,8 +632,7 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${plugin.spotless-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.)
-                before release -->
+                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.) before release -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
