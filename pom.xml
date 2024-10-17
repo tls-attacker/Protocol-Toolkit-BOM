@@ -552,7 +552,7 @@
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bctls-jdk15to18</artifactId>
+                <artifactId>bctls-jdk15on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
             </dependency>
             <!-- siv-mode -->
