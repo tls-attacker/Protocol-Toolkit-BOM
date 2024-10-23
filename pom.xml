@@ -114,7 +114,7 @@
         <toolkit.common.modifiableVariable.version>4.2.2</toolkit.common.modifiableVariable.version>
         <toolkit.common.protocolattacker.version>1.1.3</toolkit.common.protocolattacker.version>
         <toolkit.common.asn1attacker.version>3.0.1</toolkit.common.asn1attacker.version>
-        <toolkit.common.x509attacker.version>3.1.2</toolkit.common.x509attacker.version>
+        <toolkit.common.x509attacker.version>3.1.3</toolkit.common.x509attacker.version>
         <toolkit.tls.dockerlib.version>2.4.1</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>6.1.8</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>6.1.1</toolkit.tls.scanner.version>
