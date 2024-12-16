@@ -6,7 +6,7 @@
 
     <groupId>de.rub.nds</groupId>
     <artifactId>protocol-toolkit-bom</artifactId>
-    <version>4.0.3-SNAPSHOT</version>
+    <version>4.2.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Protocol Toolkit (Bill of Materials)</name>
@@ -122,65 +122,67 @@
         <toolkit.tls.scanner.version>6.0.1-SNAPSHOT</toolkit.tls.scanner.version>
         <toolkit.common.scannercore.version>5.3.5-SNAPSHOT</toolkit.common.scannercore.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
-        <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
-        <toolkit.ssh.attacker.version>1.3.0</toolkit.ssh.attacker.version>
-        <toolkit.ssh.scanner.version>1.0.0</toolkit.ssh.scanner.version>
-        <toolkit.anvil.core.version>1.2.1</toolkit.anvil.core.version>
+        <toolkit.tls.breaker.version>1.0.1</toolkit.tls.breaker.version>
+        <toolkit.ssh.attacker.version>1.4.1</toolkit.ssh.attacker.version>
+        <toolkit.ssh.scanner.version>1.1.1</toolkit.ssh.scanner.version>
+        <toolkit.anvil.core.version>1.2.4</toolkit.anvil.core.version>
+        <toolkit.common.coffee4j.anvil.version>1.2.0</toolkit.common.coffee4j.anvil.version>
         <!-- Common external dependencies -->
-        <deps.jaxb.version>4.0.4</deps.jaxb.version>
-        <deps.log4j.version>2.23.0</deps.log4j.version>
-        <deps.commons-lang3.version>3.14.0</deps.commons-lang3.version>
-        <deps.commons-text.version>1.11.0</deps.commons-text.version>
+        <deps.jaxb.version>4.0.5</deps.jaxb.version>
+        <deps.log4j.version>2.24.3</deps.log4j.version>
+        <deps.commons-lang3.version>3.17.0</deps.commons-lang3.version>
+        <deps.commons-text.version>1.13.0</deps.commons-text.version>
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
-        <deps.commons-net.version>3.10.0</deps.commons-net.version>
-        <deps.commons-validator.version>1.8.0</deps.commons-validator.version>
-        <deps.guava.version>33.0.0-jre</deps.guava.version>
+        <deps.commons-net.version>3.11.1</deps.commons-net.version>
+        <deps.commons-validator.version>1.9.0</deps.commons-validator.version>
+        <deps.guava.version>33.3.1-jre</deps.guava.version>
         <deps.bouncycastle.version>1.64</deps.bouncycastle.version>
         <deps.jcommander.version>1.82</deps.jcommander.version>
         <deps.json-simple.version>1.1.1</deps.json-simple.version>
-        <deps.jackson.version>2.16.1</deps.jackson.version>
+        <deps.jackson.version>2.18.2</deps.jackson.version>
         <deps.reflections.version>0.10.2</deps.reflections.version>
-        <deps.dnsjava.version>3.5.3</deps.dnsjava.version>
-        <deps.joda-time.version>2.12.7</deps.joda-time.version>
-        <deps.docker-java.version>3.3.6</deps.docker-java.version>
-        <deps.rabbitmq.version>5.20.0</deps.rabbitmq.version>
-        <deps.mongodb.version>5.0.0</deps.mongodb.version>
-        <deps.mongojack.version>4.8.2</deps.mongojack.version>
-        <deps.quartz.version>2.3.2</deps.quartz.version>
+        <deps.dnsjava.version>3.6.2</deps.dnsjava.version>
+        <deps.joda-time.version>2.13.0</deps.joda-time.version>
+        <deps.docker-java.version>3.4.1</deps.docker-java.version>
+        <deps.rabbitmq.version>5.24.0</deps.rabbitmq.version>
+        <deps.mongodb.version>5.2.1</deps.mongodb.version>
+        <deps.mongojack.version>5.0.2</deps.mongojack.version>
+        <deps.quartz.version>2.5.0</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
-        <deps.selenium.version>4.18.1</deps.selenium.version>
-        <deps.siv-mode.version>1.5.0</deps.siv-mode.version>
+        <deps.selenium.version>4.27.0</deps.selenium.version>
+        <deps.siv-mode.version>1.6.0</deps.siv-mode.version>
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
         <!-- Unit testing dependencies -->
-        <deps.junit5.version>5.10.2</deps.junit5.version>
-        <deps.mockito.version>5.10.0</deps.mockito.version>
+        <deps.junit5.version>5.11.3</deps.junit5.version>
+        <deps.mockito.version>5.14.2</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
-        <plugin.maven-clean-plugin.version>3.3.2</plugin.maven-clean-plugin.version>
-        <plugin.maven-enforcer-plugin.version>3.4.1</plugin.maven-enforcer-plugin.version>
+        <plugin.maven-clean-plugin.version>3.4.0</plugin.maven-clean-plugin.version>
+        <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
         <plugin.spotless-maven-plugin.version>2.43.0</plugin.spotless-maven-plugin.version>
-        <plugin.flatten-maven-plugin.version>1.6.0</plugin.flatten-maven-plugin.version>
+        <!-- DO NOT UPDATE TO >= 1.4.0, see tls-attacker/Protocol-Toolkit-BOM#127 -->
+        <plugin.flatten-maven-plugin.version>1.3.0</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
-        <plugin.jacoco.version>0.8.11</plugin.jacoco.version>
-        <plugin.maven-compiler-plugin.version>3.12.1</plugin.maven-compiler-plugin.version>
-        <plugin.maven-surefire-plugin.version>3.2.5</plugin.maven-surefire-plugin.version>
-        <plugin.maven-jar-plugin.version>3.3.0</plugin.maven-jar-plugin.version>
-        <plugin.maven-javadoc-plugin.version>3.6.3</plugin.maven-javadoc-plugin.version>
-        <plugin.maven-source-plugin.version>3.3.0</plugin.maven-source-plugin.version>
-        <plugin.maven-install-plugin.version>3.1.1</plugin.maven-install-plugin.version>
-        <plugin.maven-dependency-plugin.version>3.6.1</plugin.maven-dependency-plugin.version>
-        <plugin.maven-failsafe-plugin.version>3.2.5</plugin.maven-failsafe-plugin.version>
-        <plugin.maven-gpg-plugin.version>3.1.0</plugin.maven-gpg-plugin.version>
-        <plugin.maven-deploy-plugin.version>3.1.1</plugin.maven-deploy-plugin.version>
-        <plugin.nexus-staging-maven-plugin.version>1.6.13</plugin.nexus-staging-maven-plugin.version>
-        <plugin.versions-maven-plugin.version>2.16.2</plugin.versions-maven-plugin.version>
-        <plugin.maven-release-plugin.version>3.0.1</plugin.maven-release-plugin.version>
+        <plugin.jacoco.version>0.8.12</plugin.jacoco.version>
+        <plugin.maven-compiler-plugin.version>3.13.0</plugin.maven-compiler-plugin.version>
+        <plugin.maven-surefire-plugin.version>3.5.2</plugin.maven-surefire-plugin.version>
+        <plugin.maven-jar-plugin.version>3.4.2</plugin.maven-jar-plugin.version>
+        <plugin.maven-javadoc-plugin.version>3.11.2</plugin.maven-javadoc-plugin.version>
+        <plugin.maven-source-plugin.version>3.3.1</plugin.maven-source-plugin.version>
+        <plugin.maven-install-plugin.version>3.1.3</plugin.maven-install-plugin.version>
+        <plugin.maven-dependency-plugin.version>3.8.1</plugin.maven-dependency-plugin.version>
+        <plugin.maven-failsafe-plugin.version>3.5.2</plugin.maven-failsafe-plugin.version>
+        <plugin.maven-gpg-plugin.version>3.2.7</plugin.maven-gpg-plugin.version>
+        <plugin.maven-deploy-plugin.version>3.1.3</plugin.maven-deploy-plugin.version>
+        <plugin.nexus-staging-maven-plugin.version>1.7.0</plugin.nexus-staging-maven-plugin.version>
+        <plugin.versions-maven-plugin.version>2.18.0</plugin.versions-maven-plugin.version>
+        <plugin.maven-release-plugin.version>3.1.1</plugin.maven-release-plugin.version>
         <!-- Reporting plugins -->
-        <plugin.maven-site-plugin.version>4.0.0-M13</plugin.maven-site-plugin.version>
-        <plugin.maven-project-info-reports-plugin.version>3.5.0</plugin.maven-project-info-reports-plugin.version>
-        <plugin.spotbugs-maven-plugin.version>4.8.3.1</plugin.spotbugs-maven-plugin.version>
-        <plugin.maven-pmd-plugin.version>3.21.2</plugin.maven-pmd-plugin.version>
-        <plugin.maven-jxr-plugin.version>3.3.2</plugin.maven-jxr-plugin.version>
+        <plugin.maven-site-plugin.version>4.0.0-M16</plugin.maven-site-plugin.version>
+        <plugin.maven-project-info-reports-plugin.version>3.8.0</plugin.maven-project-info-reports-plugin.version>
+        <plugin.spotbugs-maven-plugin.version>4.8.6.6</plugin.spotbugs-maven-plugin.version>
+        <plugin.maven-pmd-plugin.version>3.26.0</plugin.maven-pmd-plugin.version>
+        <plugin.maven-jxr-plugin.version>3.6.0</plugin.maven-jxr-plugin.version>
         <!-- Common properties -->
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -354,6 +356,33 @@
                 <groupId>de.rub.nds.ssh.attacker</groupId>
                 <artifactId>ssh-server</artifactId>
                 <version>${toolkit.ssh.attacker.version}</version>
+            </dependency>
+            <!-- SSH-Scanner -->
+            <dependency>
+                <groupId>de.rub.nds.ssh.scanner</groupId>
+                <artifactId>ssh-bulk-scanner</artifactId>
+                <version>${toolkit.ssh.scanner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds.ssh.scanner</groupId>
+                <artifactId>ssh-client-scanner</artifactId>
+                <version>${toolkit.ssh.scanner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds.ssh.scanner</groupId>
+                <artifactId>ssh-scanner</artifactId>
+                <version>${toolkit.ssh.scanner.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds.ssh.scanner</groupId>
+                <artifactId>ssh-scanner-core</artifactId>
+                <version>${toolkit.ssh.scanner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds.ssh.scanner</groupId>
+                <artifactId>ssh-server-scanner</artifactId>
+                <version>${toolkit.ssh.scanner.version}</version>
             </dependency>
             <!-- Coffee4j Anvil -->
             <dependency>
@@ -552,6 +581,11 @@
                 <artifactId>bcprov-jdk15on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bctls-jdk15on</artifactId>
+                <version>${deps.bouncycastle.version}</version>
+            </dependency>
             <!-- siv-mode -->
             <dependency>
                 <groupId>org.cryptomator</groupId>
@@ -608,16 +642,14 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!--##################
-                clean lifecycle plugins ##################-->
+                <!--################## clean lifecycle plugins ##################-->
                 <!-- Plugin to remove build artifacts -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>${plugin.maven-clean-plugin.version}</version>
                 </plugin>
-                <!--#################
-                default lifecycle plugins #################-->
+                <!--################# default lifecycle plugins #################-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -629,8 +661,7 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${plugin.spotless-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.)
-                before release -->
+                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.) before release -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
@@ -718,8 +749,7 @@
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>${plugin.nexus-staging-maven-plugin.version}</version>
                 </plugin>
-                <!--##################
-                site lifecycle plugins ###################-->
+                <!--################## site lifecycle plugins ###################-->
                 <!-- Plugin used to generate a site for the project -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -738,8 +768,7 @@
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${plugin.spotbugs-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin used to generate reports for code rule violation and copy paste
-                fragments -->
+                <!-- Plugin used to generate reports for code rule violation and copy paste fragments -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
@@ -751,8 +780,7 @@
                     <artifactId>maven-jxr-plugin</artifactId>
                     <version>${plugin.maven-jxr-plugin.version}</version>
                 </plugin>
-                <!--############
-                plugins without lifecycle bindings #############-->
+                <!--############ plugins without lifecycle bindings #############-->
                 <!-- Plugin to ease version management for dependencies -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -768,13 +796,11 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- WARNING: The following plugins are carefully selected and either already included
-            by the default
+            <!-- WARNING: The following plugins are carefully selected and either already included by the default
                  lifecycle bindings or not bound to the lifecycle (only exception to this rule is the
                  maven-enforcer-plugin and spotless-maven-plugin). This section should not be used
                  to configure plugins. -->
-            <!--#################
-            default lifecycle plugins #################-->
+            <!--################# default lifecycle plugins #################-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -821,7 +847,6 @@
                         <flexmark />
                     </markdown>
                 </configuration>
-                <!--
                 <executions>
                     <execution>
                         <id>format</id>
@@ -831,7 +856,6 @@
                         <phase>process-sources</phase>
                     </execution>
                 </executions>
-            -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -856,8 +880,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
-            <!--############
-            plugins without lifecycle bindings #############-->
+            <!--############ plugins without lifecycle bindings #############-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -868,8 +891,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <scmCommentPrefix>release:</scmCommentPrefix>
-                    <!--suppress
-                    UnresolvedMavenProperty -->
+                    <!--suppress UnresolvedMavenProperty -->
                     <scmReleaseCommitComment>@{prefix} @{releaseLabel}</scmReleaseCommitComment>
                     <scmDevelopmentCommitComment>@{prefix} Prepare for next development iteration</scmDevelopmentCommitComment>
                 </configuration>
@@ -901,8 +923,7 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <!-- deploy with the following command: mvn -P maven-release
-                            nexus-staging:release -->
+                            <!-- deploy with the following command: mvn -P maven-release nexus-staging:release -->
                             <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
