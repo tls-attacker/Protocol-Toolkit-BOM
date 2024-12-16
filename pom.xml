@@ -113,7 +113,7 @@
 
     <properties>
         <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>4.1.5-SNAPSHOT</toolkit.common.modifiableVariable.version>
+        <toolkit.common.modifiableVariable.version>4.2.3-SNAPSHOT</toolkit.common.modifiableVariable.version>
         <toolkit.common.protocolattacker.version>1.1.4-SNAPSHOT</toolkit.common.protocolattacker.version>
         <toolkit.common.asn1attacker.version>3.0.1-SNAPSHOT</toolkit.common.asn1attacker.version>
         <toolkit.common.x509attacker.version>3.0.0-SNAPSHOT</toolkit.common.x509attacker.version>
