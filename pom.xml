@@ -151,7 +151,7 @@
         <deps.siv-mode.version>1.6.0</deps.siv-mode.version>
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
         <!-- Unit testing dependencies -->
-        <deps.junit5.version>5.11.3</deps.junit5.version>
+        <deps.junit5.version>5.11.4</deps.junit5.version>
         <deps.mockito.version>5.14.2</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
