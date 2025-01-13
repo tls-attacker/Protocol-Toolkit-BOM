@@ -143,7 +143,7 @@
         <deps.joda-time.version>2.13.0</deps.joda-time.version>
         <deps.docker-java.version>3.4.1</deps.docker-java.version>
         <deps.rabbitmq.version>5.24.0</deps.rabbitmq.version>
-        <deps.mongodb.version>5.2.1</deps.mongodb.version>
+        <deps.mongodb.version>5.3.0</deps.mongodb.version>
         <deps.mongojack.version>5.0.2</deps.mongojack.version>
         <deps.quartz.version>2.5.0</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
