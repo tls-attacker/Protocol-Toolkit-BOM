@@ -150,6 +150,7 @@
         <deps.selenium.version>4.28.1</deps.selenium.version>
         <deps.siv-mode.version>1.6.0</deps.siv-mode.version>
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
+        <deps.mavenmodel.version>3.9.9</deps.mavenmodel.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.11.4</deps.junit5.version>
         <deps.mockito.version>5.15.2</deps.mockito.version>
@@ -189,6 +190,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Maven Model -->
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-model</artifactId>
+                <version>{deps.mavenmodel.version}</version>
+            </dependency>
             <!-- Jackson BOM -->
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
