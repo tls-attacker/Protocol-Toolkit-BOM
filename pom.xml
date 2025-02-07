@@ -118,7 +118,7 @@
         <toolkit.tls.dockerlib.version>2.4.2</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>6.3.4</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>6.1.5</toolkit.tls.scanner.version>
-        <toolkit.common.scannercore.version>5.4.1</toolkit.common.scannercore.version>
+        <toolkit.common.scannercore.version>5.5.0</toolkit.common.scannercore.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.1</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.4.1</toolkit.ssh.attacker.version>
