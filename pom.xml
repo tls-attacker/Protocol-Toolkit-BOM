@@ -134,7 +134,7 @@
         <deps.commons-net.version>3.11.1</deps.commons-net.version>
         <deps.commons-validator.version>1.9.0</deps.commons-validator.version>
         <deps.guava.version>33.4.0-jre</deps.guava.version>
-        <deps.bouncycastle.version>1.64</deps.bouncycastle.version>
+        <deps.bouncycastle.version>1.80</deps.bouncycastle.version>
         <deps.jcommander.version>1.82</deps.jcommander.version>
         <deps.json-simple.version>1.1.1</deps.json-simple.version>
         <deps.jackson.version>2.18.2</deps.jackson.version>
@@ -571,17 +571,17 @@
             <!-- Bouncy Castle -->
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcpkix-jdk15on</artifactId>
+                <artifactId>bcpkix-jdk18on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15on</artifactId>
+                <artifactId>bcprov-jdk18on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bctls-jdk15on</artifactId>
+                <artifactId>bctls-jdk18on</artifactId>
                 <version>${deps.bouncycastle.version}</version>
             </dependency>
             <!-- siv-mode -->
