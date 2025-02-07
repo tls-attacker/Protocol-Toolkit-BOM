@@ -115,16 +115,14 @@
         <toolkit.common.protocolattacker.version>1.1.5</toolkit.common.protocolattacker.version>
         <toolkit.common.asn1attacker.version>3.0.2</toolkit.common.asn1attacker.version>
         <toolkit.common.x509attacker.version>3.1.7</toolkit.common.x509attacker.version>
+        <toolkit.common.scannercore.version>5.5.0</toolkit.common.scannercore.version>
+        <toolkit.common.anvilcore.version>1.2.4</toolkit.common.anvilcore.version>
+        <toolkit.common.coffee4j.anvil.version>1.2.0</toolkit.common.coffee4j.anvil.version>
         <toolkit.tls.dockerlib.version>2.4.2</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>6.3.4</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>6.1.5</toolkit.tls.scanner.version>
-        <toolkit.common.scannercore.version>5.5.0</toolkit.common.scannercore.version>
-        <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
-        <toolkit.tls.breaker.version>1.0.1</toolkit.tls.breaker.version>
         <toolkit.ssh.attacker.version>1.4.1</toolkit.ssh.attacker.version>
         <toolkit.ssh.scanner.version>1.1.1</toolkit.ssh.scanner.version>
-        <toolkit.anvil.core.version>1.2.4</toolkit.anvil.core.version>
-        <toolkit.common.coffee4j.anvil.version>1.2.0</toolkit.common.coffee4j.anvil.version>
         <!-- Common external dependencies -->
         <deps.jaxb.version>4.0.5</deps.jaxb.version>
         <deps.log4j.version>2.24.3</deps.log4j.version>
@@ -286,11 +284,11 @@
                 <artifactId>commons-validator</artifactId>
                 <version>${deps.commons-validator.version}</version>
             </dependency>
-            <!-- Anvil-Core -->
+            <!-- Common toolkit components -->
             <dependency>
                 <groupId>de.rub.nds</groupId>
                 <artifactId>anvil-core</artifactId>
-                <version>${toolkit.anvil.core.version}</version>
+                <version>${toolkit.common.anvilcore.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
@@ -302,7 +300,6 @@
                 <artifactId>modifiable-variable</artifactId>
                 <version>${toolkit.common.modifiableVariable.version}</version>
             </dependency>
-            <!-- Common toolkit components -->
             <dependency>
                 <groupId>de.rub.nds</groupId>
                 <artifactId>protocol-attacker</artifactId>
@@ -444,73 +441,6 @@
                 <groupId>de.rub.nds.tls.attacker</groupId>
                 <artifactId>utils</artifactId>
                 <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <!-- TLS-Breaker -->
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>bleichenbacher</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>breaker-commons</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>client-psk-bruteforcer</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>drown</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>heartbleed</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>invalidcurve</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>lucky13</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>paddingoracle</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>poodle</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>server-psk-bruteforcer</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>tls-breaker</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.breaker</groupId>
-                <artifactId>tlspoodle</artifactId>
-                <version>${toolkit.tls.breaker.version}</version>
-            </dependency>
-            <!-- TLS-Crawler -->
-            <dependency>
-                <groupId>de.rub.nds.tls.crawler</groupId>
-                <artifactId>tls-crawler</artifactId>
-                <version>${toolkit.tls.crawler.version}</version>
             </dependency>
             <!-- TLS-Docker-Library -->
             <dependency>
