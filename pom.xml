@@ -154,7 +154,7 @@
         <deps.mockito.version>5.15.2</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
-        <plugin.maven-clean-plugin.version>3.4.0</plugin.maven-clean-plugin.version>
+        <plugin.maven-clean-plugin.version>3.4.1</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
         <plugin.spotless-maven-plugin.version>2.44.2</plugin.spotless-maven-plugin.version>
         <!-- DO NOT UPDATE TO >= 1.4.0, see tls-attacker/Protocol-Toolkit-BOM#127 -->
