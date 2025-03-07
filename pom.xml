@@ -139,7 +139,7 @@
         <deps.reflections.version>0.10.2</deps.reflections.version>
         <deps.dnsjava.version>3.6.3</deps.dnsjava.version>
         <deps.joda-time.version>2.13.1</deps.joda-time.version>
-        <deps.docker-java.version>3.4.1</deps.docker-java.version>
+        <deps.docker-java.version>3.4.2</deps.docker-java.version>
         <deps.rabbitmq.version>5.25.0</deps.rabbitmq.version>
         <deps.mongodb.version>5.3.1</deps.mongodb.version>
         <deps.mongojack.version>5.0.2</deps.mongojack.version>
