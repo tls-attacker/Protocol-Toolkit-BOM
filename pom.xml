@@ -150,7 +150,7 @@
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
         <deps.pcap4j.version>1.8.2</deps.pcap4j.version>
         <!-- Unit testing dependencies -->
-        <deps.junit5.version>5.12.0</deps.junit5.version>
+        <deps.junit5.version>5.12.1</deps.junit5.version>
         <deps.mockito.version>5.16.1</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <!-- Plugin versions -->
