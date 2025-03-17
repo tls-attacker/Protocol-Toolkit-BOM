@@ -116,7 +116,7 @@
         <toolkit.common.asn1attacker.version>4.0.1</toolkit.common.asn1attacker.version>
         <toolkit.common.x509attacker.version>4.1.1</toolkit.common.x509attacker.version>
         <toolkit.common.scannercore.version>6.0.0</toolkit.common.scannercore.version>
-        <toolkit.common.anvilcore.version>2.0.0</toolkit.common.anvilcore.version>
+        <toolkit.common.anvilcore.version>2.0.1</toolkit.common.anvilcore.version>
         <toolkit.common.coffee4j.anvil.version>2.0.0</toolkit.common.coffee4j.anvil.version>
         <toolkit.tls.dockerlib.version>3.0.0</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>7.0.2</toolkit.tls.attacker.version>
