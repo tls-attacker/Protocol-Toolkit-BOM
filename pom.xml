@@ -119,7 +119,7 @@
         <toolkit.common.anvilcore.version>2.0.2</toolkit.common.anvilcore.version>
         <toolkit.common.coffee4j.anvil.version>2.0.0</toolkit.common.coffee4j.anvil.version>
         <toolkit.tls.dockerlib.version>3.0.0</toolkit.tls.dockerlib.version>
-        <toolkit.tls.attacker.version>7.0.4</toolkit.tls.attacker.version>
+        <toolkit.tls.attacker.version>7.0.5</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>7.0.2</toolkit.tls.scanner.version>
         <toolkit.ssh.attacker.version>2.0.0</toolkit.ssh.attacker.version>
         <toolkit.ssh.scanner.version>2.0.0</toolkit.ssh.scanner.version>
