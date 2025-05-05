@@ -116,11 +116,13 @@
         <toolkit.common.asn1attacker.version>4.0.1</toolkit.common.asn1attacker.version>
         <toolkit.common.x509attacker.version>4.1.1</toolkit.common.x509attacker.version>
         <toolkit.common.scannercore.version>6.0.0</toolkit.common.scannercore.version>
+        <toolkit.common.crawlercore.version>1.0.0</toolkit.common.crawlercore.version>
         <toolkit.common.anvilcore.version>2.0.3</toolkit.common.anvilcore.version>
         <toolkit.common.coffee4j.anvil.version>2.0.0</toolkit.common.coffee4j.anvil.version>
         <toolkit.tls.dockerlib.version>3.0.0</toolkit.tls.dockerlib.version>
         <toolkit.tls.attacker.version>7.0.7</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>7.0.2</toolkit.tls.scanner.version>
+        <toolkit.tls.crawler.version>2.0.0</toolkit.tls.crawler.version>
         <toolkit.ssh.attacker.version>2.0.0</toolkit.ssh.attacker.version>
         <toolkit.ssh.scanner.version>2.0.0</toolkit.ssh.scanner.version>
         <!-- Common external dependencies -->
@@ -313,6 +315,11 @@
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
+                <artifactId>crawler-core</artifactId>
+                <version>${toolkit.common.crawlercore.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds</groupId>
                 <artifactId>x509-attacker</artifactId>
                 <version>${toolkit.common.x509attacker.version}</version>
             </dependency>
@@ -470,6 +477,12 @@
                 <groupId>de.rub.nds.tls.scanner</groupId>
                 <artifactId>tls-server-scanner</artifactId>
                 <version>${toolkit.tls.scanner.version}</version>
+            </dependency>
+            <!-- TLS-Crawler -->
+            <dependency>
+                <groupId>de.rub.nds.tls.crawler</groupId>
+                <artifactId>tls-crawler</artifactId>
+                <version>${toolkit.tls.crawler.version}</version>
             </dependency>
             <!-- DNS Java -->
             <dependency>
