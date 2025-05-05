@@ -145,7 +145,7 @@
         <deps.mongojack.version>5.0.2</deps.mongojack.version>
         <deps.quartz.version>2.5.0</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
-        <deps.selenium.version>4.31.0</deps.selenium.version>
+        <deps.selenium.version>4.32.0</deps.selenium.version>
         <deps.siv-mode.version>1.6.1</deps.siv-mode.version>
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
         <deps.pcap4j.version>1.8.2</deps.pcap4j.version>
