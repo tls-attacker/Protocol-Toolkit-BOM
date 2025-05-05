@@ -300,6 +300,11 @@
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
+                <artifactId>crawler-core</artifactId>
+                <version>${toolkit.common.crawlercore.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.rub.nds</groupId>
                 <artifactId>modifiable-variable</artifactId>
                 <version>${toolkit.common.modifiableVariable.version}</version>
             </dependency>
@@ -312,11 +317,6 @@
                 <groupId>de.rub.nds</groupId>
                 <artifactId>scanner-core</artifactId>
                 <version>${toolkit.common.scannercore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>crawler-core</artifactId>
-                <version>${toolkit.common.crawlercore.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.rub.nds</groupId>
@@ -450,6 +450,12 @@
                 <artifactId>utils</artifactId>
                 <version>${toolkit.tls.attacker.version}</version>
             </dependency>
+            <!-- TLS-Crawler -->
+            <dependency>
+                <groupId>de.rub.nds.tls.crawler</groupId>
+                <artifactId>tls-crawler</artifactId>
+                <version>${toolkit.tls.crawler.version}</version>
+            </dependency>
             <!-- TLS-Docker-Library -->
             <dependency>
                 <groupId>de.rub.nds.tls.dockerlib</groupId>
@@ -477,12 +483,6 @@
                 <groupId>de.rub.nds.tls.scanner</groupId>
                 <artifactId>tls-server-scanner</artifactId>
                 <version>${toolkit.tls.scanner.version}</version>
-            </dependency>
-            <!-- TLS-Crawler -->
-            <dependency>
-                <groupId>de.rub.nds.tls.crawler</groupId>
-                <artifactId>tls-crawler</artifactId>
-                <version>${toolkit.tls.crawler.version}</version>
             </dependency>
             <!-- DNS Java -->
             <dependency>
