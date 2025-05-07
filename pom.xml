@@ -155,6 +155,7 @@
         <deps.junit5.version>5.12.2</deps.junit5.version>
         <deps.mockito.version>5.17.0</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
+        <deps.junitplaform.version>1.12.2</deps.junitplaform.version>
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.4.1</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
@@ -219,6 +220,13 @@
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
                 <version>${deps.junit5.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+                <version>${deps.junitplaform.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
