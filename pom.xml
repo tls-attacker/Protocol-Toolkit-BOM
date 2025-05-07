@@ -724,8 +724,7 @@
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${plugin.spotbugs-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin used to generate reports for code rule violation and copy paste
-                fragments -->
+                <!-- Plugin used to generate reports for code rule violation and copy paste fragments -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
@@ -848,8 +847,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <scmCommentPrefix>release:</scmCommentPrefix>
-                    <!--suppress
-                    UnresolvedMavenProperty -->
+                    <!--suppress UnresolvedMavenProperty -->
                     <scmReleaseCommitComment>@{prefix} @{releaseLabel}</scmReleaseCommitComment>
                     <scmDevelopmentCommitComment>@{prefix} Prepare for next development iteration</scmDevelopmentCommitComment>
                 </configuration>
