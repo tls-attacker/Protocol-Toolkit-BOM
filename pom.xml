@@ -4,7 +4,7 @@
 
     <groupId>de.rub.nds</groupId>
     <artifactId>protocol-toolkit-bom</artifactId>
-    <version>5.2.3demo-SNAPSHOT</version>
+    <version>5.2.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Protocol Toolkit (Bill of Materials)</name>
@@ -881,12 +881,12 @@
                 <repository>
                     <id>central-upload</id>
                     <name>Maven Central Repository</name>
-                    <url>https://central.sonatype.com/artifacts/releases</url>
+                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
                 <snapshotRepository>
                     <id>central-upload</id>
                     <name>Maven Central Repository (SNAPSHOT)</name>
-                    <url>https://central.sonatype.com/artifacts/snapshots</url>
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
                 </snapshotRepository>
             </distributionManagement>
             <!-- Override default distributionManagement for Maven Central deployment -->
@@ -902,11 +902,12 @@
                     <!-- Artifact deployment to central -->
                     <!-- Just use standard Maven deployment mechanism for Maven Central -->
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-deploy-plugin</artifactId>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>central-upload</publishingServerId>
-                            <centralBaseUrl>https://central.sonatype.com</centralBaseUrl>
+                            <autoPublish>true</autoPublish>
                         </configuration>
                     </plugin>
                 </plugins>
