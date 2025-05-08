@@ -702,14 +702,14 @@
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${plugin.maven-deploy-plugin.version}</version>
                 </plugin>
-                <!-- Plugin to deploy the project to OSSRH / Maven Central -->
+                <!-- Maven Central publishing plugin - disabled in favor of standard deploy -->
                 <plugin>
                     <groupId>org.sonatype.central</groupId>
                     <artifactId>central-publishing-maven-plugin</artifactId>
                     <version>${plugin.central-publishing-maven-plugin.version}</version>
-                    <extensions>true</extensions>
                     <configuration>
                         <publishingServerId>rub-nexus</publishingServerId>
+                        <autoPublish>true</autoPublish>
                     </configuration>
                 </plugin>
                 <!--##################
@@ -847,6 +847,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>false</skip>
+                </configuration>
             </plugin>
             <!--############
             plugins without lifecycle bindings #############-->
@@ -873,20 +876,37 @@
         <!-- Deployment to Maven Central is done by activating this profile via -P central -->
         <profile>
             <id>central</id>
+
+            <distributionManagement>
+                <repository>
+                    <id>central-upload</id>
+                    <name>Maven Central Repository</name>
+                    <url>https://central.sonatype.com/artifacts/releases</url>
+                </repository>
+                <snapshotRepository>
+                    <id>central-upload</id>
+                    <name>Maven Central Repository (SNAPSHOT)</name>
+                    <url>https://central.sonatype.com/artifacts/snapshots</url>
+                </snapshotRepository>
+            </distributionManagement>
+            <!-- Override default distributionManagement for Maven Central deployment -->
+            <!-- Switch to Maven Central deployment -->
+
             <properties>
                 <!-- Artifacts pushed to maven central must be signed -->
                 <skip.signature>false</skip.signature>
             </properties>
+
             <build>
                 <plugins>
                     <!-- Artifact deployment to central -->
+                    <!-- Just use standard Maven deployment mechanism for Maven Central -->
                     <plugin>
-                        <groupId>org.sonatype.central</groupId>
-                        <artifactId>central-publishing-maven-plugin</artifactId>
-                        <version>${plugin.central-publishing-maven-plugin.version}</version>
-                        <extensions>true</extensions>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-deploy-plugin</artifactId>
                         <configuration>
-                            <publishingServerId>central</publishingServerId>
+                            <publishingServerId>central-upload</publishingServerId>
+                            <centralBaseUrl>https://central.sonatype.com</centralBaseUrl>
                         </configuration>
                     </plugin>
                 </plugins>
