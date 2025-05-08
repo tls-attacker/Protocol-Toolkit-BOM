@@ -598,16 +598,14 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!--##################
-                clean lifecycle plugins ##################-->
+                <!--################## clean lifecycle plugins ##################-->
                 <!-- Plugin to remove build artifacts -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>${plugin.maven-clean-plugin.version}</version>
                 </plugin>
-                <!--#################
-                default lifecycle plugins #################-->
+                <!--################# default lifecycle plugins #################-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -619,8 +617,7 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${plugin.spotless-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.)
-                before release -->
+                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.) before release -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
@@ -712,8 +709,7 @@
                         <autoPublish>true</autoPublish>
                     </configuration>
                 </plugin>
-                <!--##################
-                site lifecycle plugins ###################-->
+                <!--################## site lifecycle plugins ###################-->
                 <!-- Plugin used to generate a site for the project -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -732,8 +728,7 @@
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${plugin.spotbugs-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin used to generate reports for code rule violation and copy paste
-                fragments -->
+                <!-- Plugin used to generate reports for code rule violation and copy paste fragments -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
@@ -745,8 +740,7 @@
                     <artifactId>maven-jxr-plugin</artifactId>
                     <version>${plugin.maven-jxr-plugin.version}</version>
                 </plugin>
-                <!--############
-                plugins without lifecycle bindings #############-->
+                <!--############ plugins without lifecycle bindings #############-->
                 <!-- Plugin to ease version management for dependencies -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -762,13 +756,11 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- WARNING: The following plugins are carefully selected and either already included
-            by the default
+            <!-- WARNING: The following plugins are carefully selected and either already included by the default
                  lifecycle bindings or not bound to the lifecycle (only exception to this rule is the
                  maven-enforcer-plugin and spotless-maven-plugin). This section should not be used
                  to configure plugins. -->
-            <!--#################
-            default lifecycle plugins #################-->
+            <!--################# default lifecycle plugins #################-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -851,8 +843,7 @@
                     <skip>false</skip>
                 </configuration>
             </plugin>
-            <!--############
-            plugins without lifecycle bindings #############-->
+            <!--############ plugins without lifecycle bindings #############-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -863,8 +854,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <scmCommentPrefix>release:</scmCommentPrefix>
-                    <!--suppress
-                    UnresolvedMavenProperty -->
+                    <!--suppress UnresolvedMavenProperty -->
                     <scmReleaseCommitComment>@{prefix} @{releaseLabel}</scmReleaseCommitComment>
                     <scmDevelopmentCommitComment>@{prefix} Prepare for next development iteration</scmDevelopmentCommitComment>
                 </configuration>
