@@ -699,7 +699,7 @@
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${plugin.maven-deploy-plugin.version}</version>
                 </plugin>
-                <!-- Maven Central publishing plugin - disabled in favor of standard deploy -->
+                <!-- Maven Central publishing plugin -->
                 <plugin>
                     <groupId>org.sonatype.central</groupId>
                     <artifactId>central-publishing-maven-plugin</artifactId>
