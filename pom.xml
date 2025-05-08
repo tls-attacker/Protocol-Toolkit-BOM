@@ -598,14 +598,16 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!--################## clean lifecycle plugins ##################-->
+                <!--##################
+                clean lifecycle plugins ##################-->
                 <!-- Plugin to remove build artifacts -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>${plugin.maven-clean-plugin.version}</version>
                 </plugin>
-                <!--################# default lifecycle plugins #################-->
+                <!--#################
+                default lifecycle plugins #################-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -617,7 +619,8 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${plugin.spotless-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.) before release -->
+                <!-- Plugin to flatten pom.xml (resolve parent and variables, remove comments, etc.)
+                before release -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
@@ -706,10 +709,11 @@
                     <version>${plugin.central-publishing-maven-plugin.version}</version>
                     <extensions>true</extensions>
                     <configuration>
-                        <publishingServerId>central</publishingServerId>
+                        <publishingServerId>rub-nexus</publishingServerId>
                     </configuration>
                 </plugin>
-                <!--################## site lifecycle plugins ###################-->
+                <!--##################
+                site lifecycle plugins ###################-->
                 <!-- Plugin used to generate a site for the project -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -728,7 +732,8 @@
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${plugin.spotbugs-maven-plugin.version}</version>
                 </plugin>
-                <!-- Plugin used to generate reports for code rule violation and copy paste fragments -->
+                <!-- Plugin used to generate reports for code rule violation and copy paste
+                fragments -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
@@ -740,7 +745,8 @@
                     <artifactId>maven-jxr-plugin</artifactId>
                     <version>${plugin.maven-jxr-plugin.version}</version>
                 </plugin>
-                <!--############ plugins without lifecycle bindings #############-->
+                <!--############
+                plugins without lifecycle bindings #############-->
                 <!-- Plugin to ease version management for dependencies -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -756,11 +762,13 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- WARNING: The following plugins are carefully selected and either already included by the default
+            <!-- WARNING: The following plugins are carefully selected and either already included
+            by the default
                  lifecycle bindings or not bound to the lifecycle (only exception to this rule is the
                  maven-enforcer-plugin and spotless-maven-plugin). This section should not be used
                  to configure plugins. -->
-            <!--################# default lifecycle plugins #################-->
+            <!--#################
+            default lifecycle plugins #################-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -840,7 +848,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
-            <!--############ plugins without lifecycle bindings #############-->
+            <!--############
+            plugins without lifecycle bindings #############-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -851,7 +860,8 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <scmCommentPrefix>release:</scmCommentPrefix>
-                    <!--suppress UnresolvedMavenProperty -->
+                    <!--suppress
+                    UnresolvedMavenProperty -->
                     <scmReleaseCommitComment>@{prefix} @{releaseLabel}</scmReleaseCommitComment>
                     <scmDevelopmentCommitComment>@{prefix} Prepare for next development iteration</scmDevelopmentCommitComment>
                 </configuration>
@@ -860,31 +870,23 @@
     </build>
 
     <profiles>
-        <!-- Deployment to Maven Central is done by activating this profile via -P maven-release -->
+        <!-- Deployment to Maven Central is done by activating this profile via -P central -->
         <profile>
-            <id>maven-release</id>
-            <distributionManagement>
-                <repository>
-                    <id>ossrh</id>
-                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-                </repository>
-            </distributionManagement>
+            <id>central</id>
             <properties>
                 <!-- Artifacts pushed to maven central must be signed -->
                 <skip.signature>false</skip.signature>
             </properties>
             <build>
                 <plugins>
-                    <!-- Artifact deployment to OSSRH -->
+                    <!-- Artifact deployment to central -->
                     <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>${plugin.central-publishing-maven-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <!-- deploy with the following command: mvn -P maven-release nexus-staging:release -->
-                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                            <publishingServerId>central</publishingServerId>
                         </configuration>
                     </plugin>
                 </plugins>
