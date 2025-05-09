@@ -111,7 +111,7 @@
 
     <properties>
         <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>5.1.0</toolkit.common.modifiableVariable.version>
+        <toolkit.common.modifiableVariable.version>5.1.1</toolkit.common.modifiableVariable.version>
         <toolkit.common.protocolattacker.version>2.0.1</toolkit.common.protocolattacker.version>
         <toolkit.common.asn1attacker.version>4.0.1</toolkit.common.asn1attacker.version>
         <toolkit.common.x509attacker.version>4.1.1</toolkit.common.x509attacker.version>
