@@ -92,7 +92,7 @@
     <scm>
         <connection>scm:git:https://github.com/tls-attacker/Protocol-Toolkit-BOM.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/tls-attacker/Protocol-Toolkit-BOM.git</developerConnection>
-        <tag>v5.1.13</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/tls-attacker/Protocol-Toolkit-BOM</url>
     </scm>
 
@@ -110,21 +110,6 @@
     </distributionManagement>
 
     <properties>
-        <!-- Toolkit component versions -->
-        <toolkit.common.modifiableVariable.version>5.1.1</toolkit.common.modifiableVariable.version>
-        <toolkit.common.protocolattacker.version>2.0.2</toolkit.common.protocolattacker.version>
-        <toolkit.common.asn1attacker.version>4.1.0</toolkit.common.asn1attacker.version>
-        <toolkit.common.x509attacker.version>4.2.0</toolkit.common.x509attacker.version>
-        <toolkit.common.scannercore.version>6.1.0</toolkit.common.scannercore.version>
-        <toolkit.common.crawlercore.version>1.0.0</toolkit.common.crawlercore.version>
-        <toolkit.common.anvilcore.version>2.0.3</toolkit.common.anvilcore.version>
-        <toolkit.common.coffee4j.anvil.version>2.0.0</toolkit.common.coffee4j.anvil.version>
-        <toolkit.tls.dockerlib.version>3.1.0</toolkit.tls.dockerlib.version>
-        <toolkit.tls.attacker.version>7.1.0</toolkit.tls.attacker.version>
-        <toolkit.tls.scanner.version>7.0.2</toolkit.tls.scanner.version>
-        <toolkit.tls.crawler.version>2.0.0</toolkit.tls.crawler.version>
-        <toolkit.ssh.attacker.version>2.0.0</toolkit.ssh.attacker.version>
-        <toolkit.ssh.scanner.version>2.0.0</toolkit.ssh.scanner.version>
         <!-- Common external dependencies -->
         <deps.jaxb.version>4.0.5</deps.jaxb.version>
         <deps.log4j.version>2.24.3</deps.log4j.version>
@@ -294,203 +279,6 @@
                 <groupId>commons-validator</groupId>
                 <artifactId>commons-validator</artifactId>
                 <version>${deps.commons-validator.version}</version>
-            </dependency>
-            <!-- Common toolkit components -->
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>anvil-core</artifactId>
-                <version>${toolkit.common.anvilcore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>asn1-attacker</artifactId>
-                <version>${toolkit.common.asn1attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>crawler-core</artifactId>
-                <version>${toolkit.common.crawlercore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>modifiable-variable</artifactId>
-                <version>${toolkit.common.modifiableVariable.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>protocol-attacker</artifactId>
-                <version>${toolkit.common.protocolattacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>scanner-core</artifactId>
-                <version>${toolkit.common.scannercore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds</groupId>
-                <artifactId>x509-attacker</artifactId>
-                <version>${toolkit.common.x509attacker.version}</version>
-            </dependency>
-            <!-- SSH-Attacker -->
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>attacks</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-attacker</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-client</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-core</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-core-oqs</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-mitm</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.attacker</groupId>
-                <artifactId>ssh-server</artifactId>
-                <version>${toolkit.ssh.attacker.version}</version>
-            </dependency>
-            <!-- SSH-Scanner -->
-            <dependency>
-                <groupId>de.rub.nds.ssh.scanner</groupId>
-                <artifactId>ssh-bulk-scanner</artifactId>
-                <version>${toolkit.ssh.scanner.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.scanner</groupId>
-                <artifactId>ssh-client-scanner</artifactId>
-                <version>${toolkit.ssh.scanner.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.scanner</groupId>
-                <artifactId>ssh-scanner</artifactId>
-                <version>${toolkit.ssh.scanner.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.scanner</groupId>
-                <artifactId>ssh-scanner-core</artifactId>
-                <version>${toolkit.ssh.scanner.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.ssh.scanner</groupId>
-                <artifactId>ssh-server-scanner</artifactId>
-                <version>${toolkit.ssh.scanner.version}</version>
-            </dependency>
-            <!-- Coffee4j Anvil -->
-            <dependency>
-                <groupId>de.rub.nds.tls</groupId>
-                <artifactId>coffee4j-anvil-engine</artifactId>
-                <version>${toolkit.common.coffee4j.anvil.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls</groupId>
-                <artifactId>coffee4j-anvil-junit-jupiter</artifactId>
-                <version>${toolkit.common.coffee4j.anvil.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls</groupId>
-                <artifactId>coffee4j-anvil-model</artifactId>
-                <version>${toolkit.common.coffee4j.anvil.version}</version>
-            </dependency>
-            <!-- TLS-Attacker -->
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>tls-attacker</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>tls-client</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>tls-core</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>tls-mitm</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>tls-proxy</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>tls-server</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>trace-tool</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>transport</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.attacker</groupId>
-                <artifactId>utils</artifactId>
-                <version>${toolkit.tls.attacker.version}</version>
-            </dependency>
-            <!-- TLS-Crawler -->
-            <dependency>
-                <groupId>de.rub.nds.tls.crawler</groupId>
-                <artifactId>tls-crawler</artifactId>
-                <version>${toolkit.tls.crawler.version}</version>
-            </dependency>
-            <!-- TLS-Docker-Library -->
-            <dependency>
-                <groupId>de.rub.nds.tls.dockerlib</groupId>
-                <artifactId>tls-docker-library</artifactId>
-                <version>${toolkit.tls.dockerlib.version}</version>
-            </dependency>
-            <!-- TLS-Scanner -->
-            <dependency>
-                <groupId>de.rub.nds.tls.scanner</groupId>
-                <artifactId>tls-client-scanner</artifactId>
-                <version>${toolkit.tls.scanner.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.scanner</groupId>
-                <artifactId>tls-scanner</artifactId>
-                <version>${toolkit.tls.scanner.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.scanner</groupId>
-                <artifactId>tls-scanner-core</artifactId>
-                <version>${toolkit.tls.scanner.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.rub.nds.tls.scanner</groupId>
-                <artifactId>tls-server-scanner</artifactId>
-                <version>${toolkit.tls.scanner.version}</version>
             </dependency>
             <!-- DNS Java -->
             <dependency>
@@ -765,6 +553,17 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <executions>
+                    <execution>
+                        <id>enforce-dependency-convergence</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <dependencyConvergence />
+                            </rules>
+                        </configuration>
+                    </execution>
                     <execution>
                         <id>enforce-versions</id>
                         <goals>
