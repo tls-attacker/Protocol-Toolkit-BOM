@@ -560,7 +560,11 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <dependencyConvergence />
+                                <dependencyConvergence>
+                                    <includes>
+                                        <include>de.rub.nds*</include>
+                                    </includes>
+                                </dependencyConvergence>
                             </rules>
                         </configuration>
                     </execution>
