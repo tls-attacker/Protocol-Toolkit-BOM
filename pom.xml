@@ -138,7 +138,7 @@
         <deps.pcap4j.version>1.8.2</deps.pcap4j.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>5.12.2</deps.junit5.version>
-        <deps.mockito.version>5.17.0</deps.mockito.version>
+        <deps.mockito.version>5.18.0</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
         <deps.junitplaform.version>1.12.2</deps.junitplaform.version>
         <!-- Plugin versions -->
