@@ -4,7 +4,7 @@
 
     <groupId>de.rub.nds</groupId>
     <artifactId>protocol-toolkit-bom</artifactId>
-    <version>3.2.8</version>
+    <version>3.2.8a-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Protocol Toolkit (Bill of Materials)</name>
@@ -117,7 +117,7 @@
         <toolkit.common.x509attacker.version>2.0.0</toolkit.common.x509attacker.version>
         <toolkit.common.scannercore.version>5.2.7</toolkit.common.scannercore.version>
         <toolkit.tls.dockerlib.version>2.2.3</toolkit.tls.dockerlib.version>
-        <toolkit.tls.attacker.version>5.2.1</toolkit.tls.attacker.version>
+        <toolkit.tls.attacker.version>5.2.1a</toolkit.tls.attacker.version>
         <toolkit.tls.scanner.version>5.3.1</toolkit.tls.scanner.version>
         <toolkit.tls.crawler.version>1.0.0</toolkit.tls.crawler.version>
         <toolkit.tls.breaker.version>1.0.0</toolkit.tls.breaker.version>
@@ -166,7 +166,7 @@
         <plugin.maven-failsafe-plugin.version>3.1.2</plugin.maven-failsafe-plugin.version>
         <plugin.maven-gpg-plugin.version>3.1.0</plugin.maven-gpg-plugin.version>
         <plugin.maven-deploy-plugin.version>3.1.1</plugin.maven-deploy-plugin.version>
-        <plugin.nexus-staging-maven-plugin.version>1.6.13</plugin.nexus-staging-maven-plugin.version>
+        <plugin.central-publishing-maven-plugin.version>0.7.0</plugin.central-publishing-maven-plugin.version>
         <plugin.versions-maven-plugin.version>2.16.0</plugin.versions-maven-plugin.version>
         <plugin.maven-release-plugin.version>3.0.1</plugin.maven-release-plugin.version>
         <!-- Reporting plugins -->
@@ -660,9 +660,13 @@
                 </plugin>
                 <!-- Plugin to deploy the project to a remote repository -->
                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-deploy-plugin</artifactId>
-                    <version>${plugin.maven-deploy-plugin.version}</version>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${plugin.central-publishing-maven-plugin.version}</version>
+                    <configuration>
+                        <publishingServerId>rub-nexus</publishingServerId>
+                        <autoPublish>true</autoPublish>
+                    </configuration>
                 </plugin>
                 <!-- Plugin to deploy the project to OSSRH / Maven Central -->
                 <plugin>
@@ -800,6 +804,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>false</skip>
+                </configuration>
             </plugin>
             <!--############ plugins without lifecycle bindings #############-->
             <plugin>
@@ -820,32 +827,42 @@
         </plugins>
     </build>
 
-    <profiles>
-        <!-- Deployment to Maven Central is done by activating this profile via -P maven-release -->
+     <profiles>
+        <!-- Deployment to Maven Central is done by activating this profile via -P central -->
         <profile>
-            <id>maven-release</id>
+            <id>central</id>
+
             <distributionManagement>
                 <repository>
-                    <id>ossrh</id>
+                    <id>central-upload</id>
+                    <name>Maven Central Repository</name>
                     <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
+                <snapshotRepository>
+                    <id>central-upload</id>
+                    <name>Maven Central Repository (SNAPSHOT)</name>
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+                </snapshotRepository>
             </distributionManagement>
+            <!-- Override default distributionManagement for Maven Central deployment -->
+            <!-- Switch to Maven Central deployment -->
+
             <properties>
                 <!-- Artifacts pushed to maven central must be signed -->
                 <skip.signature>false</skip.signature>
             </properties>
+
             <build>
                 <plugins>
-                    <!-- Artifact deployment to OSSRH -->
+                    <!-- Artifact deployment to central -->
+                    <!-- Just use standard Maven deployment mechanism for Maven Central -->
                     <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <!-- deploy with the following command: mvn -P maven-release nexus-staging:release -->
-                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                            <publishingServerId>central-upload</publishingServerId>
+                            <autoPublish>true</autoPublish>
                         </configuration>
                     </plugin>
                 </plugins>
