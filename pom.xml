@@ -242,7 +242,7 @@
             </dependency>
             <!-- Classmate -->
             <dependency>
-                <groupId>com.fasterxml.classmate</groupId>
+                <groupId>com.fasterxml</groupId>
                 <artifactId>classmate</artifactId>
                 <version>${deps.classmate.version}</version>
             </dependency>
