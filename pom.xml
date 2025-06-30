@@ -136,6 +136,7 @@
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
         <deps.selenium.version>4.33.0</deps.selenium.version>
         <deps.siv-mode.version>1.6.1</deps.siv-mode.version>
+        <deps.spotbugs-annotations.version>4.9.3</deps.spotbugs-annotations.version>
         <deps.jtransforms.version>3.1</deps.jtransforms.version>
         <deps.pcap4j.version>1.8.2</deps.pcap4j.version>
         <!-- Unit testing dependencies -->
@@ -255,6 +256,12 @@
                 <groupId>com.github.docker-java</groupId>
                 <artifactId>docker-java-transport-httpclient5</artifactId>
                 <version>${deps.docker-java.version}</version>
+            </dependency>
+            <!-- SpotBugs Annotations -->
+            <dependency>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-annotations</artifactId>
+                <version>${deps.spotbugs-annotations.version}</version>
             </dependency>
             <!-- JTransforms -->
             <dependency>
