@@ -147,8 +147,7 @@
         <plugin.maven-clean-plugin.version>3.5.0</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
         <plugin.spotless-maven-plugin.version>2.44.5</plugin.spotless-maven-plugin.version>
-        <!-- DO NOT UPDATE TO >= 1.4.0, see tls-attacker/Protocol-Toolkit-BOM#127 -->
-        <plugin.flatten-maven-plugin.version>1.3.0</plugin.flatten-maven-plugin.version>
+        <plugin.flatten-maven-plugin.version>1.7.1</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.13</plugin.jacoco.version>
         <plugin.maven-compiler-plugin.version>3.14.0</plugin.maven-compiler-plugin.version>
@@ -427,6 +426,9 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
                     <version>${plugin.flatten-maven-plugin.version}</version>
+                    <configuration>
+                        <flattenDependencyMode>inherited</flattenDependencyMode>
+                    </configuration>
                 </plugin>
                 <!-- Plugin to handle copying of resources to target -->
                 <plugin>
