@@ -147,7 +147,7 @@
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.5.0</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
-        <plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>1.1.0</plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>
+        <plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>1.1.1</plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>
         <plugin.spotless-maven-plugin.version>2.44.5</plugin.spotless-maven-plugin.version>
         <plugin.spotless-maven-plugin.google-java-format.version>1.27.0</plugin.spotless-maven-plugin.google-java-format.version>
         <plugin.flatten-maven-plugin.version>1.7.1</plugin.flatten-maven-plugin.version>
@@ -606,6 +606,12 @@
                                         <!-- SLF4J is known to be backwards-compatible across major versions,
                                              so we exclude it from convergence checks -->
                                         <item>org.slf4j:slf4j-api</item>
+                                        <!-- There is a known conflict between the Jakarta Activation API versions 1 and 2.
+                                                Jakarta JAXB depends on version 2 while the docker-java library
+                                                transitively depends on version 1 instead. We still exclude this
+                                                dependency from enforcement as there are no negative consequences known
+                                                and JAXB is in the process of being phased out anyway. -->
+                                        <item>jakarta.activation:jakarta.activation-api</item>
                                     </exclusions>
                                 </relaxedDependencyConvergence>
                             </rules>
