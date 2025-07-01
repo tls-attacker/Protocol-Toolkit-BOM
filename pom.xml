@@ -147,7 +147,9 @@
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.5.0</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.5.0</plugin.maven-enforcer-plugin.version>
+        <plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>1.1.0</plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>
         <plugin.spotless-maven-plugin.version>2.44.5</plugin.spotless-maven-plugin.version>
+        <plugin.spotless-maven-plugin.google-java-format.version>1.27.0</plugin.spotless-maven-plugin.google-java-format.version>
         <plugin.flatten-maven-plugin.version>1.7.1</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.13</plugin.jacoco.version>
@@ -584,6 +586,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
+                <dependencies>
+                    <dependency>
+                        <groupId>de.rub.nds</groupId>
+                        <artifactId>relaxed-dependency-convergence-rule</artifactId>
+                        <version>${plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version}</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <id>enforce-dependency-convergence</id>
@@ -592,11 +601,13 @@
                         </goals>
                         <configuration>
                             <rules>
-                                <dependencyConvergence>
-                                    <includes>
-                                        <include>de.rub.nds*</include>
-                                    </includes>
-                                </dependencyConvergence>
+                                <relaxedDependencyConvergence>
+                                    <exclusions>
+                                        <!-- SLF4J is known to be backwards-compatible across major versions,
+                                             so we exclude it from convergence checks -->
+                                        <item>org.slf4j:slf4j-api</item>
+                                    </exclusions>
+                                </relaxedDependencyConvergence>
                             </rules>
                         </configuration>
                     </execution>
