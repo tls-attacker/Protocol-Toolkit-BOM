@@ -15,3 +15,7 @@ updates:
     registries: "*"
     reviewers:
       - "tls-attacker/tls-attacker-extended"
+    groups:
+      internal:
+        patterns:
+          - "de.rub.nds*"
