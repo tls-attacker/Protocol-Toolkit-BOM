@@ -115,7 +115,7 @@
         <deps.log4j.version>2.25.0</deps.log4j.version>
         <deps.classmate.version>1.7.0</deps.classmate.version>
         <deps.commons-lang3.version>3.17.0</deps.commons-lang3.version>
-        <deps.commons-text.version>1.13.1</deps.commons-text.version>
+        <deps.commons-text.version>1.14.0</deps.commons-text.version>
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
         <deps.commons-net.version>3.11.1</deps.commons-net.version>
         <deps.commons-validator.version>1.9.0</deps.commons-validator.version>
