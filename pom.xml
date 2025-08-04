@@ -117,7 +117,7 @@
         <deps.commons-lang3.version>3.17.0</deps.commons-lang3.version>
         <deps.commons-text.version>1.13.1</deps.commons-text.version>
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
-        <deps.commons-net.version>3.11.1</deps.commons-net.version>
+        <deps.commons-net.version>3.12.0</deps.commons-net.version>
         <deps.commons-validator.version>1.9.0</deps.commons-validator.version>
         <deps.guava.version>33.4.8-jre</deps.guava.version>
         <deps.bouncycastle.version>1.81</deps.bouncycastle.version>
