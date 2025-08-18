@@ -157,7 +157,7 @@
         <plugin.maven-surefire-plugin.version>3.5.3</plugin.maven-surefire-plugin.version>
         <plugin.exec-maven-plugin.version>3.5.1</plugin.exec-maven-plugin.version>
         <plugin.maven-jar-plugin.version>3.4.2</plugin.maven-jar-plugin.version>
-        <plugin.maven-javadoc-plugin.version>3.11.2</plugin.maven-javadoc-plugin.version>
+        <plugin.maven-javadoc-plugin.version>3.11.3</plugin.maven-javadoc-plugin.version>
         <plugin.maven-source-plugin.version>3.3.1</plugin.maven-source-plugin.version>
         <plugin.maven-install-plugin.version>3.1.4</plugin.maven-install-plugin.version>
         <plugin.maven-dependency-plugin.version>3.8.1</plugin.maven-dependency-plugin.version>
