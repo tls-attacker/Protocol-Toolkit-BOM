@@ -612,6 +612,8 @@
                                                 dependency from enforcement as there are no negative consequences known
                                                 and JAXB is in the process of being phased out anyway. -->
                                         <item>jakarta.activation:jakarta.activation-api</item>
+                                        <!-- JetBrains annotations always conflict when building Kotlin applications -->
+                                        <item>org.jetbrains:annotations</item>
                                     </exclusions>
                                 </relaxedDependencyConvergence>
                             </rules>
