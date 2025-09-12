@@ -130,7 +130,7 @@
         <deps.jsonschema-generator.version>4.38.0</deps.jsonschema-generator.version>
         <deps.docker-java.version>3.6.0</deps.docker-java.version>
         <deps.rabbitmq.version>5.26.0</deps.rabbitmq.version>
-        <deps.mongodb.version>5.5.1</deps.mongodb.version>
+        <deps.mongodb.version>5.6.0</deps.mongodb.version>
         <deps.mongojack.version>5.0.3</deps.mongojack.version>
         <deps.quartz.version>2.5.0</deps.quartz.version>
         <deps.jakarta-persistence.version>2.2.3</deps.jakarta-persistence.version>
