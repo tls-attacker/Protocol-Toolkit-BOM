@@ -119,7 +119,7 @@
         <deps.commons-math3.version>3.6.1</deps.commons-math3.version>
         <deps.commons-net.version>3.12.0</deps.commons-net.version>
         <deps.commons-validator.version>1.10.0</deps.commons-validator.version>
-        <deps.guava.version>33.4.8-jre</deps.guava.version>
+        <deps.guava.version>33.5.0-jre</deps.guava.version>
         <deps.bouncycastle.version>1.81</deps.bouncycastle.version>
         <deps.jcommander.version>1.82</deps.jcommander.version>
         <deps.json-simple.version>1.1.1</deps.json-simple.version>
