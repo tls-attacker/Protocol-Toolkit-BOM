@@ -111,7 +111,7 @@
 
     <properties>
         <!-- Common external dependencies -->
-        <deps.jaxb.version>4.0.5</deps.jaxb.version>
+        <deps.jaxb.version>4.0.6</deps.jaxb.version>
         <deps.log4j.version>2.25.1</deps.log4j.version>
         <deps.classmate.version>1.7.0</deps.classmate.version>
         <deps.commons-lang3.version>3.18.0</deps.commons-lang3.version>
