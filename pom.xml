@@ -153,7 +153,7 @@
         <plugin.flatten-maven-plugin.version>1.7.1</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.3.1</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.13</plugin.jacoco.version>
-        <plugin.maven-compiler-plugin.version>3.14.0</plugin.maven-compiler-plugin.version>
+        <plugin.maven-compiler-plugin.version>3.14.1</plugin.maven-compiler-plugin.version>
         <plugin.maven-surefire-plugin.version>3.5.3</plugin.maven-surefire-plugin.version>
         <plugin.exec-maven-plugin.version>3.5.1</plugin.exec-maven-plugin.version>
         <plugin.maven-jar-plugin.version>3.4.2</plugin.maven-jar-plugin.version>
