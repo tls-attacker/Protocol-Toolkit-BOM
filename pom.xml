@@ -528,7 +528,7 @@
                     <version>${plugin.central-publishing-maven-plugin.version}</version>
                     <configuration>
                         <publishingServerId>rub-nexus</publishingServerId>
-                        <autoPublish>true</autoPublish>
+                        <autoPublish>false</autoPublish>
                     </configuration>
                 </plugin>
                 <!--################## site lifecycle plugins ###################-->
@@ -751,7 +751,7 @@
                         <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>central-upload</publishingServerId>
-                            <autoPublish>true</autoPublish>
+                            <autoPublish>false</autoPublish>
                         </configuration>
                     </plugin>
                 </plugins>
