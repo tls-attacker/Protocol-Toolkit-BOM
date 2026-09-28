@@ -176,7 +176,9 @@
         <!-- Common properties -->
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
+        <!-- Release specific properties; are overriden in "Central" profile -->
         <skip.signature>true</skip.signature>
+        <central.autoPublish>true</central.autoPublish>
     </properties>
 
     <dependencyManagement>
@@ -528,7 +530,7 @@
                     <version>${plugin.central-publishing-maven-plugin.version}</version>
                     <configuration>
                         <publishingServerId>rub-nexus</publishingServerId>
-                        <autoPublish>true</autoPublish>
+                        <autoPublish>${central.autoPublish}</autoPublish>
                     </configuration>
                 </plugin>
                 <!--################## site lifecycle plugins ###################-->
@@ -739,6 +741,7 @@
             <properties>
                 <!-- Artifacts pushed to maven central must be signed -->
                 <skip.signature>false</skip.signature>
+                <central.autoPublish>false</central.autoPublish>
             </properties>
 
             <build>
@@ -751,7 +754,7 @@
                         <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>central-upload</publishingServerId>
-                            <autoPublish>true</autoPublish>
+                            <autoPublish>${central.autoPublish}</autoPublish>
                         </configuration>
                     </plugin>
                 </plugins>
