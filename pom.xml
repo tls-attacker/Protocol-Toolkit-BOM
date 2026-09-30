@@ -92,7 +92,7 @@
     <scm>
         <connection>scm:git:https://github.com/tls-attacker/Protocol-Toolkit-BOM.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/tls-attacker/Protocol-Toolkit-BOM.git</developerConnection>
-        <tag>v6.2.2</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/tls-attacker/Protocol-Toolkit-BOM</url>
     </scm>
 
@@ -149,7 +149,7 @@
         <plugin.maven-enforcer-plugin.version>3.6.3</plugin.maven-enforcer-plugin.version>
         <plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>1.1.1</plugin.maven-enforcer-plugin.relaxed-dependency-convergence-rule.version>
         <plugin.spotless-maven-plugin.version>3.10.3</plugin.spotless-maven-plugin.version>
-        <plugin.spotless-maven-plugin.google-java-format.version>1.27.0</plugin.spotless-maven-plugin.google-java-format.version>
+        <plugin.spotless-maven-plugin.google-java-format.version>1.36.1</plugin.spotless-maven-plugin.google-java-format.version>
         <plugin.flatten-maven-plugin.version>1.7.1</plugin.flatten-maven-plugin.version>
         <plugin.maven-resources-plugin.version>3.5.0</plugin.maven-resources-plugin.version>
         <plugin.jacoco.version>0.8.15</plugin.jacoco.version>
