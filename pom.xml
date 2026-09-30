@@ -127,7 +127,7 @@
         <deps.reflections.version>0.10.2</deps.reflections.version>
         <deps.dnsjava.version>3.6.3</deps.dnsjava.version>
         <deps.joda-time.version>2.14.0</deps.joda-time.version>
-        <deps.jsonschema-generator.version>4.38.0</deps.jsonschema-generator.version>
+        <deps.jsonschema-generator.version>5.0.0</deps.jsonschema-generator.version>
         <deps.docker-java.version>3.6.0</deps.docker-java.version>
         <deps.rabbitmq.version>5.34.0</deps.rabbitmq.version>
         <deps.mongodb.version>5.13.0</deps.mongodb.version>
