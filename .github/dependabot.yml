@@ -11,7 +11,7 @@ updates:
     schedule:
       # Check for dependency updates on a daily basis
       interval: "daily"
-    open-pull-requests-limit: 20
+    open-pull-requests-limit: 25
     registries: "*"
     groups:
       internal:
