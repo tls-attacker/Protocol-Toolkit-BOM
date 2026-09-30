@@ -125,7 +125,7 @@
         <deps.json-simple.version>1.1.1</deps.json-simple.version>
         <deps.jackson.version>2.20.0</deps.jackson.version>
         <deps.reflections.version>0.10.2</deps.reflections.version>
-        <deps.dnsjava.version>3.6.3</deps.dnsjava.version>
+        <deps.dnsjava.version>3.6.5</deps.dnsjava.version>
         <deps.joda-time.version>2.14.0</deps.joda-time.version>
         <deps.jsonschema-generator.version>4.38.0</deps.jsonschema-generator.version>
         <deps.docker-java.version>3.6.0</deps.docker-java.version>
