@@ -137,7 +137,7 @@
         <deps.selenium.version>4.35.0</deps.selenium.version>
         <deps.siv-mode.version>1.6.1</deps.siv-mode.version>
         <deps.spotbugs-annotations.version>4.10.4</deps.spotbugs-annotations.version>
-        <deps.jtransforms.version>3.1</deps.jtransforms.version>
+        <deps.jtransforms.version>3.2</deps.jtransforms.version>
         <deps.pcap4j.version>1.8.2</deps.pcap4j.version>
         <!-- Unit testing dependencies -->
         <deps.junit5.version>6.1.3</deps.junit5.version>
