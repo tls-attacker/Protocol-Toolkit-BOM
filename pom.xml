@@ -756,15 +756,6 @@
                             <publishingServerId>central-upload</publishingServerId>
                             <autoPublish>${central.autoPublish}</autoPublish>
                         </configuration>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <phase>verify</phase>
-                            </execution>
-                        </executions>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
