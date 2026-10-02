@@ -790,7 +790,7 @@
                                     <rules>
                                         <requireReleaseDeps>
                                             <message>SNAPSHOT dependencies are not allowed for Maven Central.</message>
-                                            <onlyWhenRelease>false</onlyWhenRelease>
+                                            <onlyWhenRelease>true</onlyWhenRelease>
                                         </requireReleaseDeps>
                                     </rules>
                                 </configuration>
