@@ -143,7 +143,7 @@
         <deps.junit5.version>5.14.4</deps.junit5.version>
         <deps.mockito.version>5.24.0</deps.mockito.version>
         <deps.openpojo.version>0.9.1</deps.openpojo.version>
-        <deps.junitplatform.version>1.14.4</deps.junitplatform.version>
+        <deps.junitplatform.version>6.1.3</deps.junitplatform.version>
         <!-- Plugin versions -->
         <plugin.maven-clean-plugin.version>3.5.0</plugin.maven-clean-plugin.version>
         <plugin.maven-enforcer-plugin.version>3.6.3</plugin.maven-enforcer-plugin.version>
